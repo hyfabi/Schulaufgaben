@@ -3,16 +3,19 @@ package at.maurutschek.rekursionen.myutil;
 import java.io.File;
 
 /**
+ * Rekursionenklasse: Klasse mit Beispielen wo ausschließlich Rekursursionen
+ * vorhanden sind
  * 
- * @author spamm
+ * @author Fabian Maurutschek
  *
  */
 public class Rekursionen {
 
 	/**
+	 * Liestet Files von einer Directory
 	 * 
-	 * @param dir
-	 * @param tabs
+	 * @param dir: Die Directory, welche durchsuchten werden soll
+	 * @param tabs: String welcher die Tabs zählt nur für die Rekursion wichtig
 	 */
 	public void listFiles(File dir, String tabs) {
 		if (!dir.exists())
@@ -26,19 +29,17 @@ public class Rekursionen {
 	}
 
 	/**
+	 * Gibt die Größe einer File/Directory auf dem Datenträger zurück
 	 * 
-	 * @param dir
-	 * @return
+	 * @param dir: Die Directory
+	 * @return Die Größe
 	 */
 	public long getGroesse(File dir) {
 		return getGroesse(dir, 0);
 	}
 
 	/**
-	 * 
-	 * @param dir
-	 * @param groesse
-	 * @return
+	 * Hilfsmethode (wahre Methode) von add(Lied l)
 	 */
 	public long getGroesse(File dir, long groesse) {
 		if (dir.isFile())
@@ -52,24 +53,20 @@ public class Rekursionen {
 	}
 
 	/**
+	 * Überprüft per "Binäre Suche" aus einem Array ein Element auf Existens
 	 * 
-	 * @param a
-	 * @param s
-	 * @return
+	 * @param a: Das Array
+	 * @param s: Das gesuchte Element
+	 * @return Ob es vorhanden ist oder nicht
 	 */
 	public boolean binSuche(int[] a, int s) {
 		return binSuche(0, a.length, a, s);
 	}
 
 	/**
-	 * 
-	 * @param l
-	 * @param r
-	 * @param ar
-	 * @param s
-	 * @return
+	 * Hilfsmethode (wahre Methode) von add(Lied l)
 	 */
-	public boolean binSuche(int l, int r, int[] ar, int s) {
+	public boolean binSuche(int l, int r, int[] ar, int s) {// Ziemlich viel komplieziertes-ich weiß
 		if (ar[(r + l) / 2] == s) {
 			System.out.println(s + " Gefunden an Stelle: " + (r + l) / 2);
 			return true;

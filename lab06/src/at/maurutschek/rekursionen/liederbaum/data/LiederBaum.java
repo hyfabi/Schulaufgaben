@@ -1,7 +1,9 @@
 package at.maurutschek.rekursionen.liederbaum.data;
 
 /**
- * LiederBaum - Eine Klasse welches einen Liederbaum implementiert und Methoden zur verfügung stellt.
+ * LiederBaum - Eine Klasse welches einen Liederbaum implementiert und Methoden
+ * zur verfügung stellt.
+ * 
  * @author Fabian Maurutschek
  *
  */
@@ -10,6 +12,7 @@ public class LiederBaum {
 
 	/**
 	 * Konstruktor
+	 * 
 	 * @param l: Der Erste Liederbaumknoten
 	 */
 	public LiederBaum(Lied l) {
@@ -24,7 +27,9 @@ public class LiederBaum {
 	}
 
 	/**
-	 * Eine Methode welche ein Lied, welches nach beriter existens im Liederbaum überprüft wird
+	 * Eine Methode welche ein Lied, welches nach beriter existens im Liederbaum
+	 * überprüft wird
+	 * 
 	 * @param l: Das Lied an sich
 	 * @return true- falls es existiert, false - falls nicht
 	 * @throws Nullpointerexception
@@ -52,6 +57,7 @@ public class LiederBaum {
 
 	/**
 	 * Fügt ein Lied in den Liederbaum hinein
+	 * 
 	 * @param l: Das zu hinzufügennde Lied
 	 * @return true/false falls hinzugefügt wurde oder nicht
 	 * @throws Exception: falls Lied null ist
@@ -88,6 +94,7 @@ public class LiederBaum {
 
 	/**
 	 * Gibt jedes Lied im Baum aus
+	 * 
 	 * @throws Exception
 	 */
 	public void ausgeben() throws Exception {
@@ -109,6 +116,7 @@ public class LiederBaum {
 
 	/**
 	 * Summiert jede Länge von einem Lied
+	 * 
 	 * @return die länge von allen Liedern
 	 * @throws Exception falls root = null ist
 	 */

@@ -2,9 +2,11 @@ package at.maurutschek.rekursionen.liederbaum.test;
 
 import at.maurutschek.rekursionen.liederbaum.data.Lied;
 import at.maurutschek.rekursionen.liederbaum.data.LiederBaum;
+
 /**
+ * Testklasse für Lied/LiederBaumKnoten/Liederbaum. Überprüft alle Methoden
  * 
- * @author spamm
+ * @author Fabian Maurutschek
  *
  */
 public class TestLiederBaum {

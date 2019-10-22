@@ -3,8 +3,9 @@ package at.maurutschek.rekursionen.myutil;
 import java.io.File;
 
 /**
+ * Testklasse für Rekusrionen. Überprüft/Testet alle Methoden
  * 
- * @author spamm
+ * @author Fabian Maurutschek
  *
  */
 public class Test {

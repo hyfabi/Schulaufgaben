@@ -157,11 +157,11 @@ public class Lied {
 		long m = this.laenge / 60; // Für Minuten
 		long s = this.laenge % 60;// Für Sekunden
 		if (s < 10) {
-			return "\"" + this.titel + "\" von " + this.interpret + " abgespeichert im \"" + this.file + "\" (Dauer: " + m
-					+ ":0" + s + ")";
+			return "\"" + this.titel + "\" von " + this.interpret + " abgespeichert im \"" + this.file + "\" (Dauer: "
+					+ m + ":0" + s + ")";
 		}
-		return "\"" + this.titel + "\" von " + this.interpret + " abgespeichert im \"" + this.file + "\" (Dauer: " + m + ":"
-				+ s + ")";
+		return "\"" + this.titel + "\" von " + this.interpret + " abgespeichert im \"" + this.file + "\" (Dauer: " + m
+				+ ":" + s + ")";
 	}
 
 	/**

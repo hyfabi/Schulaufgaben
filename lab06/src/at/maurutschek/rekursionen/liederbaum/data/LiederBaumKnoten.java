@@ -1,8 +1,9 @@
 package at.maurutschek.rekursionen.liederbaum.data;
 
 /**
+ * Liederbaumknoten - Ein einzelner Knoten
  * 
- * @author spamm
+ * @author Fabian Maurutschek
  *
  */
 public class LiederBaumKnoten {
@@ -11,14 +12,16 @@ public class LiederBaumKnoten {
 	private LiederBaumKnoten links;
 
 	/**
+	 * Konstrukter bekommt ein Lied
 	 * 
-	 * @param l
+	 * @param l: Lied
 	 */
 	public LiederBaumKnoten(Lied l) {
 		setLied(l);
 	}
 
 	/**
+	 * GIbt das Lied zurück
 	 * 
 	 * @return
 	 */
@@ -27,8 +30,9 @@ public class LiederBaumKnoten {
 	}
 
 	/**
+	 * Setzt das Lied Darf nicht null sein
 	 * 
-	 * @param l
+	 * @param l: Lied
 	 */
 	public void setLied(Lied l) {
 		if (l != null)
@@ -36,32 +40,36 @@ public class LiederBaumKnoten {
 	}
 
 	/**
+	 * Gibt den Knoten rechts zurück
 	 * 
-	 * @return
+	 * @return der knoten wenn null dann null
 	 */
 	public LiederBaumKnoten getRechts() {
 		return this.rechts;
 	}
 
 	/**
+	 * setzt den Kenoten rechts
 	 * 
-	 * @param rechts
+	 * @param rechts: Knoten
 	 */
 	public void setRechts(LiederBaumKnoten rechts) {
 		this.rechts = rechts;
 	}
 
 	/**
+	 * Gibt den Knoten links zurück
 	 * 
-	 * @return
+	 * @return der knoten wenn null dann null
 	 */
 	public LiederBaumKnoten getLinks() {
 		return this.links;
 	}
 
 	/**
+	 * setzt den Kenoten links
 	 * 
-	 * @param links
+	 * @param links: Knoten
 	 */
 	public void setLinks(LiederBaumKnoten links) {
 		this.links = links;
