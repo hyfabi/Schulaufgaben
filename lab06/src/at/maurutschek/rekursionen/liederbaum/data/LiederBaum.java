@@ -109,9 +109,9 @@ public class LiederBaum {
 	private void ausgeben(LiederBaumKnoten lbk) {
 		if (lbk.getLinks() != null)
 			ausgeben(lbk.getLinks());
+		System.out.println(lbk.getLied().toString());
 		if (lbk.getRechts() != null)
 			ausgeben(lbk.getRechts());
-		System.out.println(lbk.getLied().toString());
 	}
 
 	/**

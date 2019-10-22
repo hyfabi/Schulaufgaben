@@ -20,4 +20,5 @@
 <fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.Lied"/>
 <fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaumKnoten"/>
 <fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaum"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.F2D"/>
 </qualifiedTypeNameHistroy>

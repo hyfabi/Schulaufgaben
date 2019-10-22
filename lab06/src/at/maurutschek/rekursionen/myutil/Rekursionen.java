@@ -18,15 +18,19 @@ public class Rekursionen {
 	 * @param tabs: String welcher die Tabs zählt nur für die Rekursion wichtig
 	 */
 	public void listFiles(File dir, String tabs) {
-		if (!dir.exists())
-			return;
-		System.out.println(tabs + dir.getName());
-		if (dir.isDirectory()) {
-			tabs += "\t";
-			for (File f : dir.listFiles())
-				listFiles(f, tabs);
+		try {
+			if (!dir.exists())
+				return;
+			System.out.println(tabs + dir.getName());
+			if (dir.isDirectory()) {
+				tabs += "  ";//Sieht schöner aus als \t
+				for (File f : dir.listFiles())
+					listFiles(f, tabs);
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
 		}
-	}
+	} 
 
 	/**
 	 * Gibt die Größe einer File/Directory auf dem Datenträger zurück

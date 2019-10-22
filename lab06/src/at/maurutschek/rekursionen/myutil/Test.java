@@ -15,7 +15,6 @@ public class Test {
 	public static void main(String[] args) {
 		Rekursionen r = new Rekursionen();
 		File f = new File(System.getProperty("user.dir"));
-
 		r.listFiles(f, "");
 		System.out.println(r.getGroesse(f));
 		for (int i = 0; i <= 91; i++)
