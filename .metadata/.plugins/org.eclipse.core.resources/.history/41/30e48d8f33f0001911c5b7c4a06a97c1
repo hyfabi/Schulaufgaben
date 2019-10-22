@@ -1,0 +1,10 @@
+package at.maurutschek.rekursionen.liederbaum.test;
+
+public class TestLiederBaum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

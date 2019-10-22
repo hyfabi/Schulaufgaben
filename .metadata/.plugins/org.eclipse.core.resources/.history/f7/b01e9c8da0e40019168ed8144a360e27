@@ -1,0 +1,39 @@
+package at.maurutschek.daten;
+
+public class Liederliste {
+	LiederListknoten root;
+	
+	public Liederliste(LiederListknoten llk) {
+		root = llk;
+	}
+	
+	/*
+	  	LiederListknoten temp = root;
+		while(temp.getNext() != null) {
+			//TODO
+			temp = temp.getNext();
+		}
+	 */
+	
+	
+	public Lied vorhanden(Lied l) {
+		if(l == null || root == null)return null;
+		LiederListknoten temp = root;
+		while(temp.getNext() != null) {
+			if(temp.getLied().equals(l))return l;
+			temp = temp.getNext();
+		}
+		return null;
+	}
+	
+	public Lied add(Lied l) {
+		if(vorhanden(l) != null || l == null)return null;
+		if(root == null) root.setNext(new LiederListknoten(l, null));
+		LiederListknoten temp = root;
+		while(temp.getNext() != null) {
+			temp = temp.getNext();
+		}
+		temp.setNext(new LiederListknoten(l, null));
+		return l;
+	}
+}

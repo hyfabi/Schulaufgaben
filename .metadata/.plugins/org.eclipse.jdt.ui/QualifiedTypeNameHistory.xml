@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="at.maurutschek.test.Main"/>
+<fullyQualifiedTypeName name="at.maurutschek.daten.Liederliste"/>
+<fullyQualifiedTypeName name="at.maurutschek.daten.LiederListknoten"/>
+<fullyQualifiedTypeName name="at.maurutschek.daten.Lied"/>
+<fullyQualifiedTypeName name="daten.MyQueue"/>
+<fullyQualifiedTypeName name="daten.LiederlistKnoten"/>
+<fullyQualifiedTypeName name="daten.Lied"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.awt.image.PixelInterleavedSampleModel"/>
+<fullyQualifiedTypeName name="Quicksort"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="at.maurutschek.myutil.Rekursionen"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.LiederBaumKnoten"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.Lied"/>
+<fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaumKnoten"/>
+<fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaum"/>
+</qualifiedTypeNameHistroy>

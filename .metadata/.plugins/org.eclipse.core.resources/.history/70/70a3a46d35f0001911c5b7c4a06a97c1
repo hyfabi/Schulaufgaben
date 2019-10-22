@@ -1,0 +1,16 @@
+package at.maurutschek.rekursionen.liederbaum.test;
+
+import at.maurutschek.rekursionen.liederbaum.data.Lied;
+import at.maurutschek.rekursionen.liederbaum.data.LiederBaum;
+import at.maurutschek.rekursionen.liederbaum.data.LiederBaumKnoten;
+
+public class TestLiederBaum {
+
+	public static void main(String[] args) throws Exception {
+		LiederBaumKnoten lbk1 = new LiederBaumKnoten(new Lied("a", "a b"));
+		LiederBaum lb = new LiederBaum(lbk1);
+		System.out.println(lb.vorhanden(lbk1.getLied()));
+		lb.add(new Lied("b", "a b"));
+	}
+
+}

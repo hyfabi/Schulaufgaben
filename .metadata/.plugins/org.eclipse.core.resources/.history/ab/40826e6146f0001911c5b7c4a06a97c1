@@ -1,0 +1,92 @@
+package at.maurutschek.rekursionen.liederbaum.data;
+
+public class LiederBaum {
+	LiederBaumKnoten root;
+	
+	public LiederBaum(Lied l) {
+		root = new LiederBaumKnoten(l);
+	}
+	
+	public LiederBaum() {
+		root = null;
+	}
+
+	public boolean vorhanden(Lied l) throws Exception {
+		if(l == null)
+			throw new Exception();
+		if(root == null)
+			return false;
+		return vorhanden(root, l);
+	}
+	
+	private boolean vorhanden(LiederBaumKnoten lbk, Lied l) {
+		if(lbk.getLied().equals(l))
+			return true;
+		if(lbk.getLinks() != null)
+			return vorhanden(lbk.getLinks(), l);
+		if(lbk.getRechts() != null)
+			return vorhanden(lbk.getRechts(), l);
+		return false;
+	}
+	
+	public boolean add(Lied l) throws Exception {
+		if(l == null)
+			throw new Exception();
+		if(vorhanden(l))
+			return false;
+		if(root == null)
+			root = new LiederBaumKnoten(l);
+		return add(root, l);
+	}
+	
+	private boolean add(LiederBaumKnoten lbk, Lied l) {
+		if(lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
+			if(lbk.getLinks() != null)
+				return add(lbk.getLinks(), l);
+			lbk.setLinks(new LiederBaumKnoten(l));
+			return true;
+		}
+		if(lbk.getLied().getTitel().compareTo(l.getTitel()) < 0) {
+			if(lbk.getRechts() != null)
+				return add(lbk.getRechts(), l);
+			lbk.setRechts(new LiederBaumKnoten(l));
+			return true;
+		}
+		return false;
+	}
+	
+	public void ausgeben() throws Exception {
+		if(root == null)
+			throw new Exception();
+		ausgeben(root);
+	}
+	
+	private void ausgeben(LiederBaumKnoten lbk) {
+		if(lbk.getLinks() != null)
+			ausgeben(lbk.getLinks());
+		if(lbk.getRechts() != null)
+			ausgeben(lbk.getRechts());
+		System.out.println(lbk.getLied().toString());
+	}
+	
+	public long sumLiederLaenge() throws Exception {
+		if(root == null)
+			throw new Exception();
+		return sumLiederLaenge(root,0);
+	}
+	
+	private long sumLiederLaenge(LiederBaumKnoten lbk, long x) {
+
+		if(lbk.getLinks() != null) {
+			System.out.println("l");
+			x = sumLiederLaenge(lbk.getLinks(), x)+x;
+		}
+		if(lbk.getRechts() != null) {
+			System.out.println("r");
+			x = sumLiederLaenge(lbk.getRechts(), x)+x;
+		}
+		System.out.println("E");
+		x += lbk.getLied().getLaenge();
+		return x;
+	}
+}

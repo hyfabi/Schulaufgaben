@@ -1,0 +1,14 @@
+package at.maurutschek.test;
+
+import at.maurutschek.data.Lied;
+import at.maurutschek.data.Stack;
+
+public class TestStack {
+
+	public static void main(String[] args) {
+		Stack s = new Stack();
+		System.out.println(s.push(new Lied()));
+		System.out.println(s.peek());
+		System.out.println(s.pop());
+	}
+}

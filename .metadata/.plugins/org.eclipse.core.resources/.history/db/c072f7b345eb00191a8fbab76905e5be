@@ -1,0 +1,20 @@
+
+public class Quicksort {
+	int[] a = new int[10];
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public int pivot(int i, int j, int pivot) {
+		if(i < j) {
+			if(a[i] < a[pivot]) {
+				return pivot(i+1, j, pivot);
+			}else if(a[j] > a[pivot]) {
+				return pivot(i, j-1, pivot);
+			}
+		}
+	}
+
+}

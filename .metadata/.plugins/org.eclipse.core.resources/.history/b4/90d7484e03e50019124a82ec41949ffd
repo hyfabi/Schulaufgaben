@@ -1,0 +1,24 @@
+package at.maurutschek.test;
+
+import at.maurutschek.data.Lied;
+import at.maurutschek.data.Queue;
+
+public class TestQueue {
+
+	public static void main(String[] args) throws Exception {
+		Queue q = new Queue();
+		System.out.println(q.enqueue(new Lied()));
+		System.out.println(q.dequeue());
+		
+		for(String s : args){
+			String[] x = s.split(":");
+			if(x.length % 4 != 0) {
+				throw new Exception("False Arguments");
+			}
+			for(int i = 0; i < x.length; i+=4){
+				System.out.println(q.enqueue(new Lied(x[i], x[++i], x[i+3],Long.parseLong(x[i+2]))));
+			}
+
+		}
+	}
+}

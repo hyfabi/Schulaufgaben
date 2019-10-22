@@ -1,0 +1,12 @@
+package at.maurutschek.test;
+
+import java.io.File;
+
+import at.maurutschek.myutil.Rekursionen;
+
+public class Test {
+	public static void main(String[] args) {
+		Rekursionen r = new Rekursionen();
+		r.listFiles(new File("Bibliotheken"), "");
+	}
+}

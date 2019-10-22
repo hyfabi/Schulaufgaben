@@ -1,0 +1,13 @@
+package at.maurutschek.rekursionen.liederbaum.test;
+
+import at.maurutschek.rekursionen.liederbaum.data.LiederBaum;
+
+public class TestLiederBaum {
+
+	public static void main(String[] args) {
+		
+		
+		LiederBaum lb = new LiederBaum();
+	}
+
+}

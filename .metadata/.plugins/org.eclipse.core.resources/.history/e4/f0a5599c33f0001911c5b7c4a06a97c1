@@ -1,0 +1,9 @@
+package at.maurutschek.rekursionen.liederbaum.test;
+
+public class TestLiederBaum {
+
+	public static void main(String[] args) {
+		System.out.println("ba".compareTo("b"));
+	}
+
+}
