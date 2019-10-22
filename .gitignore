@@ -25,3 +25,6 @@ hs_err_pid*
 /.recommenders/
 
 \.metadata
+*.resources
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
