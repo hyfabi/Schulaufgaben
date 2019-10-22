@@ -39,7 +39,7 @@ public class Rekursionen {
 	}
 
 	/**
-	 * Hilfsmethode (wahre Methode) von add(Lied l)
+	 * Hilfsmethode (wahre Methode) von getGroesse(Lied l)
 	 */
 	public long getGroesse(File dir, long groesse) {
 		if (dir.isFile())
@@ -64,7 +64,7 @@ public class Rekursionen {
 	}
 
 	/**
-	 * Hilfsmethode (wahre Methode) von add(Lied l)
+	 * Hilfsmethode (wahre Methode) von binSuche(Lied l)
 	 */
 	public boolean binSuche(int l, int r, int[] ar, int s) {// Ziemlich viel komplieziertes-ich weiß
 		if (ar[(r + l) / 2] == s) {
