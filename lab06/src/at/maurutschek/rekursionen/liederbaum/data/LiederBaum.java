@@ -1,16 +1,34 @@
 package at.maurutschek.rekursionen.liederbaum.data;
 
+/**
+ * LiederBaum - Eine Klasse welches einen Liederbaum implementiert und Methoden zur verfügung stellt.
+ * @author Fabian Maurutschek
+ *
+ */
 public class LiederBaum {
 	LiederBaumKnoten root;
 
+	/**
+	 * Konstruktor
+	 * @param l: Der Erste Liederbaumknoten
+	 */
 	public LiederBaum(Lied l) {
 		this.root = new LiederBaumKnoten(l);
 	}
 
+	/**
+	 * Defaultkonstruktor besitzt am Anfang kein einziges Element
+	 */
 	public LiederBaum() {
 		this.root = null;
 	}
 
+	/**
+	 * Eine Methode welche ein Lied, welches nach beriter existens im Liederbaum überprüft wird
+	 * @param l: Das Lied an sich
+	 * @return true- falls es existiert, false - falls nicht
+	 * @throws Nullpointerexception
+	 */
 	public boolean vorhanden(Lied l) throws Exception {
 		if (l == null)
 			throw new Exception();
@@ -19,6 +37,9 @@ public class LiederBaum {
 		return vorhanden(this.root, l);
 	}
 
+	/**
+	 * Hilfsmethode (wahre Methode) von vorhanden(Lied l)
+	 */
 	private boolean vorhanden(LiederBaumKnoten lbk, Lied l) {
 		if (lbk.getLied().equals(l))
 			return true;
@@ -27,18 +48,28 @@ public class LiederBaum {
 		if (lbk.getRechts() != null)
 			return vorhanden(lbk.getRechts(), l);
 		return false;
-	} 
+	}
 
+	/**
+	 * Fügt ein Lied in den Liederbaum hinein
+	 * @param l: Das zu hinzufügennde Lied
+	 * @return true/false falls hinzugefügt wurde oder nicht
+	 * @throws Exception: falls Lied null ist
+	 */
 	public boolean add(Lied l) throws Exception {
 		if (l == null)
 			throw new Exception();
 		if (vorhanden(l))
 			return false;
-		if (this.root == null)
+		if (this.root == null) {
 			this.root = new LiederBaumKnoten(l);
+		}
 		return add(this.root, l);
 	}
 
+	/**
+	 * Hilfsmethode (wahre Methode) von add(Lied l)
+	 */
 	private boolean add(LiederBaumKnoten lbk, Lied l) {
 		if (lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
 			if (lbk.getLinks() != null)
@@ -55,12 +86,19 @@ public class LiederBaum {
 		return false;
 	}
 
+	/**
+	 * Gibt jedes Lied im Baum aus
+	 * @throws Exception
+	 */
 	public void ausgeben() throws Exception {
 		if (this.root == null)
 			throw new Exception();
 		ausgeben(this.root);
 	}
 
+	/**
+	 * Hilfsmethode (wahre Methode) von ausgeben()
+	 */
 	private void ausgeben(LiederBaumKnoten lbk) {
 		if (lbk.getLinks() != null)
 			ausgeben(lbk.getLinks());
@@ -69,12 +107,21 @@ public class LiederBaum {
 		System.out.println(lbk.getLied().toString());
 	}
 
+	/**
+	 * Summiert jede Länge von einem Lied
+	 * @return die länge von allen Liedern
+	 * @throws Exception falls root = null ist
+	 */
 	public long sumLiederLaenge() throws Exception {
 		if (this.root == null)
 			throw new Exception();
 		return sumLiederLaenge(this.root, 0);
 	}
 
+	/**
+	 * 
+	 * Hilfsmethode (wahre Methode) von sumLiederLaenge()
+	 */
 	private long sumLiederLaenge(LiederBaumKnoten lbk, long x) {
 		if (lbk.getLinks() != null)
 			x = sumLiederLaenge(lbk.getLinks(), x);

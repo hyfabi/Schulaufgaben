@@ -2,7 +2,11 @@ package at.maurutschek.rekursionen.liederbaum.test;
 
 import at.maurutschek.rekursionen.liederbaum.data.Lied;
 import at.maurutschek.rekursionen.liederbaum.data.LiederBaum;
-
+/**
+ * 
+ * @author spamm
+ *
+ */
 public class TestLiederBaum {
 
 	public static void main(String[] args) throws Exception {

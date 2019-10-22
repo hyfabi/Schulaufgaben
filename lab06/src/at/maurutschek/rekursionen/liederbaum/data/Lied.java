@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Random;
 
 /**
- * Lab 02 POS: Lied Lied ist eine Liedklasse welche Lieder attribute verwendet
+ * Lab 02 POS: Lied-Lied ist eine Liedklasse welche Lieder attribute verwendet
  * Zweck: Keine Ahnung (null)
  * 
  * @author Fabian Maurutschek
