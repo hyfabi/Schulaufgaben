@@ -21,4 +21,10 @@
 <fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaumKnoten"/>
 <fullyQualifiedTypeName name="at.maurutschek.rekursionen.liederbaum.data.LiederBaum"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.F2D"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Verwaltung"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Geschaeft"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.BioLaden"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.GeschaeftListKnoten"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Lebensmittel"/>
 </qualifiedTypeNameHistroy>

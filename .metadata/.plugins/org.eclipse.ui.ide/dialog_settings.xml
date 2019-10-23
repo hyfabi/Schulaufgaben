@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\spamm\OneDrive\Desktop\06LiederBaum"/>
 		<item value="C:\Users\spamm\OneDrive\Desktop\Lab05"/>
 		<item value="C:\Users\spamm\OneDrive\Desktop\03LiederStackundQueue"/>
 	</list>
