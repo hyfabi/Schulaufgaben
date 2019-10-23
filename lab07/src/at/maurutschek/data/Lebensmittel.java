@@ -28,8 +28,16 @@ public class Lebensmittel extends Geschaeft{
 	}
 
 	@Override
-	public void getFoerderung() {
-		// TODO Auto-generated method stub
-		
+	public float getFoerderung() {
+		return getFoerderung(this.angestellete, 100);
+	}
+	
+	private float getFoerderung(int anz, float f) {
+		if(anz == 0)
+			return f;
+		if(f >= 500)
+			return 500f;
+		anz--;
+		return (float) (f*1.5);
 	}
 }

@@ -7,7 +7,7 @@ public abstract class Geschaeft {
 	protected int angestellete;
 	
 	
-	public abstract void getFoerderung();
+	public abstract float getFoerderung();
 
 	
 

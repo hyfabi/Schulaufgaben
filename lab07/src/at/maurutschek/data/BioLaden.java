@@ -20,7 +20,10 @@ public class BioLaden extends Geschaeft{
 	}
 
 	@Override
-	public void getFoerderung() {
-		
+	public float getFoerderung() {
+		if(this.stadt)
+			return this.anzahlProdukte;
+		else
+			return this.anzahlProdukte*2;
 	}
 }
