@@ -6,7 +6,7 @@ public class Verwaltung {
 	
 	public static void main(String[] args) {
 		Verwaltung v = new Verwaltung();
-		v.addGeschaeft(new Lebensmittel(" ", true, 1, 'I'));
+		v.addGeschaeft(new Lebensmittel(" ", false, 3, 'I'));
 //		v.addGeschaeft(new Lebensmittel(" ", false, 2,'F'));
 //		v.addGeschaeft(new Lebensmittel(" ", false, 3,'S'));
 //		v.addGeschaeft(new BioLaden(" ", true, 1, 1));

@@ -45,12 +45,12 @@ public abstract class Geschaeft {
 	}
 
 	public void ausgeben() {
-		System.out.println(toString() + "]");
+		System.out.println("Geschaeft [" + toString() + "]");
 	}
 	
 	@Override
 	public String toString() {
-		return "Geschaeft [name=" + this.name + ", stadt=" + this.stadt + ", angestellete=" + this.angestellete;
+		return "name=" + this.name + ", stadt=" + this.stadt + ", angestellete=" + this.angestellete;
 	}
 	
 }

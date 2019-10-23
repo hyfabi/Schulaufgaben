@@ -29,12 +29,12 @@ public class BioLaden extends Geschaeft{
 
 	@Override
 	public String toString() {
-		return "BioLaden [anzahlProdukte=" + this.anzahlProdukte + "]";
+		return " anzahlProdukte=" + this.anzahlProdukte;
 	}
 
 	@Override
 	public void ausgeben() {
-		System.out.println(super.toString() + toString());
+		System.out.println("BioLaden [" + super.toString() + toString() + "]");
 	}
 	
 }

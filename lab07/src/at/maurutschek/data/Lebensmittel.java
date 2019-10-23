@@ -1,6 +1,6 @@
 package at.maurutschek.data;
 
-public class Lebensmittel extends Geschaeft{
+public class Lebensmittel extends Geschaeft {
 
 	private char kategorie;
 
@@ -20,29 +20,35 @@ public class Lebensmittel extends Geschaeft{
 
 	@Override
 	public String toString() {
-		return "kategorie=" + this.kategorie + "]";
+		return "kategorie=" + this.kategorie;
 	}
 
 	public void ausgeben() {
-		System.out.println(super.toString() + toString());
+		System.out.println("Lebensmittel [" + super.toString() + toString() + "]");
 	}
 
 	@Override
 	public float getFoerderung() {
-		if(this.angestellete == 0)
-			return 0;
-		float f = 100;
-		if(this.stadt)
-			f += 200;
-		return getFoerderung(this.angestellete, f);
-	}
-	
-	private float getFoerderung(int anz, float f) {
-		if(anz == 0)
+		float f = 0;
+		if (this.angestellete == 0) {
+			if (this.stadt)
+				f += 200;
 			return f;
-		if(f >= 500)
-			return 500f;
+		}
+
+		f = getFoerderung(this.angestellete, 100);
+		if (this.stadt)
+			f += 200;
+		return f;
+	}
+
+	private float getFoerderung(int anz, float f) {
+		f *= 1.5f;
 		anz--;
-		return (float) (f*1.5);
+		if (anz == 0)
+			return f;
+		if (f >= 500)
+			return 500f;
+		return getFoerderung(anz, f);
 	}
 }
