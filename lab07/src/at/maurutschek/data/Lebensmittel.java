@@ -29,6 +29,8 @@ public class Lebensmittel extends Geschaeft{
 
 	@Override
 	public float getFoerderung() {
+		if(this.angestellete == 0)
+			return 0;
 		float f = 100;
 		if(this.stadt)
 			f += 200;
