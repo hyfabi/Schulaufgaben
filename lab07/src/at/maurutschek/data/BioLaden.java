@@ -14,22 +14,18 @@ public class BioLaden extends Geschaeft{
 	}
 
 	public void setAnzahlProdukte(int anzahlProdukte) {
-		if (anzahlProdukte >= 0) {
+		if (anzahlProdukte >= 0)
 			this.anzahlProdukte = anzahlProdukte;
-		}
 	}
 
 	@Override
 	public float getFoerderung() {
-		if(this.stadt)
-			return this.anzahlProdukte;
-		else
-			return this.anzahlProdukte*2;
+		return this.stadt ? this.anzahlProdukte : this.anzahlProdukte*2;
 	}
 
 	@Override
 	public String toString() {
-		return " anzahlProdukte=" + this.anzahlProdukte;
+		return ", anzahlProdukte=" + this.anzahlProdukte;
 	}
 
 	@Override

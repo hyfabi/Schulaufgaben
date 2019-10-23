@@ -20,7 +20,7 @@ public class Lebensmittel extends Geschaeft {
 
 	@Override
 	public String toString() {
-		return "kategorie=" + this.kategorie;
+		return ", kategorie=" + this.kategorie;
 	}
 
 	public void ausgeben() {
@@ -43,10 +43,10 @@ public class Lebensmittel extends Geschaeft {
 	}
 
 	private float getFoerderung(int anz, float f) {
-		f *= 1.5f;
 		anz--;
 		if (anz == 0)
 			return f;
+		f *= 1.5f;
 		if (f >= 500)
 			return 500f;
 		return getFoerderung(anz, f);
