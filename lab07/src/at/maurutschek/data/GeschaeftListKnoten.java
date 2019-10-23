@@ -10,6 +10,11 @@ public class GeschaeftListKnoten {
 		setNext(next);
 	}
 	
+	public GeschaeftListKnoten(Geschaeft g) {
+		setGeschaeft(g);
+		setNext(null);
+	}
+
 	public Geschaeft getGeschaeft() {
 		return this.geschaeft;
 	}

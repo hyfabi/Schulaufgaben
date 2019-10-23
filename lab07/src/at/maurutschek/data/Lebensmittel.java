@@ -20,16 +20,19 @@ public class Lebensmittel extends Geschaeft{
 
 	@Override
 	public String toString() {
-		return "Lebensmittel [kategorie=" + this.kategorie + "]";
+		return "kategorie=" + this.kategorie + "]";
 	}
 
 	public void ausgeben() {
-		System.out.println(toString());
+		System.out.println(super.toString() + toString());
 	}
 
 	@Override
 	public float getFoerderung() {
-		return getFoerderung(this.angestellete, 100);
+		float f = 100;
+		if(this.stadt)
+			f += 200;
+		return getFoerderung(this.angestellete, f);
 	}
 	
 	private float getFoerderung(int anz, float f) {

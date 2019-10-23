@@ -43,7 +43,14 @@ public abstract class Geschaeft {
 	public void setAngestellete(int angestellete) {
 		this.angestellete = angestellete;
 	}
+
+	public void ausgeben() {
+		System.out.println(toString() + "]");
+	}
 	
-	
+	@Override
+	public String toString() {
+		return "Geschaeft [name=" + this.name + ", stadt=" + this.stadt + ", angestellete=" + this.angestellete;
+	}
 	
 }
