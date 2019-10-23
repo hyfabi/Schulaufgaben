@@ -70,52 +70,27 @@ public class LiederBaum {
 		if (this.root == null) {
 			this.root = new LiederBaumKnoten(l);
 		}
-		return add(l,this.root);
-	}
-
-	public Lied add( Lied lied, LiederBaumKnoten lauf) {
-		if (lauf.getLied().getTitel().compareTo(lied.getTitel()) <= 0) {
-			if (lauf.getLinks() == null) {
-				lauf.setLinks(new LiederBaumKnoten(lied));
-				return lied;
-			}
-			if (lauf.getLinks().getLied().getTitel().compareTo(lied.getTitel()) >= 0) {
-				lauf.setLinks(new LiederBaumKnoten(lied));
-				return lied;
-			}
-			return add(lied, lauf.getLinks());
-		} else if (lauf.getLied().getTitel().compareTo(lied.getTitel()) > 0) {
-			if (lauf.getRechts() == null) {
-				lauf.setRechts(new LiederBaumKnoten(lied));
-				return lied;
-			}
-			if (lauf.getRechts().getLied().getTitel().compareTo(lied.getTitel()) <= 0) {
-				lauf.setRechts(new LiederBaumKnoten(lied));
-				return lied;
-			}
-			return add(lied, lauf.getRechts());
-		} else
-			return lied;
+		return add(this.root, l);
 	}
 
 	/**
 	 * Hilfsmethode (wahre Methode) von add(Lied l)
 	 */
-//	private boolean add(LiederBaumKnoten lbk, Lied l) {
-//		if (lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
-//			if (lbk.getLinks() != null)
-//				return add(lbk.getLinks(), l);
-//			lbk.setLinks(new LiederBaumKnoten(l));
-//			return true;
-//		}
-//		if (lbk.getLied().getTitel().compareTo(l.getTitel()) < 0) {
-//			if (lbk.getRechts() != null)
-//				return add(lbk.getRechts(), l);
-//			lbk.setRechts(new LiederBaumKnoten(l));
-//			return true;
-//		}
-//		return false;
-//	}
+	private Lied add(LiederBaumKnoten lbk, Lied l) {
+		if (lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
+			if (lbk.getLinks() != null)
+				return add(lbk.getLinks(), l);
+			lbk.setLinks(new LiederBaumKnoten(l));
+			return l;
+		}
+		if (lbk.getLied().getTitel().compareTo(l.getTitel()) < 0) {
+			if (lbk.getRechts() != null)
+				return add(lbk.getRechts(), l);
+			lbk.setRechts(new LiederBaumKnoten(l));
+			return l;
+		}
+		return null;
+	}
 
 	/**
 	 * Gibt jedes Lied im Baum aus

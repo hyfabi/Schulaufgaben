@@ -1,5 +1,49 @@
 package at.maurutschek.data;
 
-public class Geschaeft {
+public abstract class Geschaeft {
+	
+	private String name;
+	protected boolean stadt;
+	protected int angestellete;
+	
+	
+	public abstract void getFoerderung();
 
+	
+
+	public Geschaeft(String name, boolean stadt, int angestellete) {
+		setAngestellete(angestellete);
+		setName(name);
+		setStadt(stadt);
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean isStadt() {
+		return this.stadt;
+	}
+
+
+	public void setStadt(boolean stadt) {
+		this.stadt = stadt;
+	}
+
+
+	public int getAngestellete() {
+		return this.angestellete;
+	}
+
+
+	public void setAngestellete(int angestellete) {
+		this.angestellete = angestellete;
+	}
+	
+	
+	
 }
