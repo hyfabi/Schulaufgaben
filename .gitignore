@@ -39,3 +39,5 @@ hs_err_pid*
 .plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
 .plugins/org.eclipse.ui.workbench/workingsets.xml
 .plugins/org.eclipse.team.cvs.core
+/.metadata/
+/.recommenders/
