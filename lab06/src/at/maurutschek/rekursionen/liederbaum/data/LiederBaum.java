@@ -62,35 +62,60 @@ public class LiederBaum {
 	 * @return true/false falls hinzugefügt wurde oder nicht
 	 * @throws Exception: falls Lied null ist
 	 */
-	public boolean add(Lied l) throws Exception {
+	public Lied add(Lied l) throws Exception {
 		if (l == null)
 			throw new Exception();
 		if (vorhanden(l))
-			return false;
+			return null;
 		if (this.root == null) {
 			this.root = new LiederBaumKnoten(l);
 		}
-		return add(this.root, l);
+		return add(l,this.root);
+	}
+
+	public Lied add( Lied lied, LiederBaumKnoten lauf) {
+		if (lauf.getLied().getTitel().compareTo(lied.getTitel()) <= 0) {
+			if (lauf.getLinks() == null) {
+				lauf.setLinks(new LiederBaumKnoten(lied));
+				return lied;
+			}
+			if (lauf.getLinks().getLied().getTitel().compareTo(lied.getTitel()) >= 0) {
+				lauf.setLinks(new LiederBaumKnoten(lied));
+				return lied;
+			}
+			return add(lied, lauf.getLinks());
+		} else if (lauf.getLied().getTitel().compareTo(lied.getTitel()) > 0) {
+			if (lauf.getRechts() == null) {
+				lauf.setRechts(new LiederBaumKnoten(lied));
+				return lied;
+			}
+			if (lauf.getRechts().getLied().getTitel().compareTo(lied.getTitel()) <= 0) {
+				lauf.setRechts(new LiederBaumKnoten(lied));
+				return lied;
+			}
+			return add(lied, lauf.getRechts());
+		} else
+			return lied;
 	}
 
 	/**
 	 * Hilfsmethode (wahre Methode) von add(Lied l)
 	 */
-	private boolean add(LiederBaumKnoten lbk, Lied l) {
-		if (lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
-			if (lbk.getLinks() != null)
-				return add(lbk.getLinks(), l);
-			lbk.setLinks(new LiederBaumKnoten(l));
-			return true;
-		}
-		if (lbk.getLied().getTitel().compareTo(l.getTitel()) < 0) {
-			if (lbk.getRechts() != null)
-				return add(lbk.getRechts(), l);
-			lbk.setRechts(new LiederBaumKnoten(l));
-			return true;
-		}
-		return false;
-	}
+//	private boolean add(LiederBaumKnoten lbk, Lied l) {
+//		if (lbk.getLied().getTitel().compareTo(l.getTitel()) > 0) {
+//			if (lbk.getLinks() != null)
+//				return add(lbk.getLinks(), l);
+//			lbk.setLinks(new LiederBaumKnoten(l));
+//			return true;
+//		}
+//		if (lbk.getLied().getTitel().compareTo(l.getTitel()) < 0) {
+//			if (lbk.getRechts() != null)
+//				return add(lbk.getRechts(), l);
+//			lbk.setRechts(new LiederBaumKnoten(l));
+//			return true;
+//		}
+//		return false;
+//	}
 
 	/**
 	 * Gibt jedes Lied im Baum aus
