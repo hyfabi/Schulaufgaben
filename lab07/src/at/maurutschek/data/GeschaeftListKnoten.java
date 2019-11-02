@@ -16,8 +16,9 @@ public class GeschaeftListKnoten {
 	 * 
 	 * @param geschaeft Geschäft
 	 * @param next      Nächste Element
+	 * @throws Exception falls das Geschäft null ist
 	 */
-	public GeschaeftListKnoten(Geschaeft geschaeft, GeschaeftListKnoten next) {
+	public GeschaeftListKnoten(Geschaeft geschaeft, GeschaeftListKnoten next) throws Exception {
 		setGeschaeft(geschaeft);
 		setNext(next);
 	}
@@ -26,8 +27,9 @@ public class GeschaeftListKnoten {
 	 * Konstruktor ohne das ein nächstes ELement verlnagt wird
 	 * 
 	 * @param g Geschäft
+	 * @throws Exception falls das Geschäft null ist
 	 */
-	public GeschaeftListKnoten(Geschaeft g) {
+	public GeschaeftListKnoten(Geschaeft g) throws Exception {
 		setGeschaeft(g);
 		setNext(null);
 	}
@@ -45,8 +47,11 @@ public class GeschaeftListKnoten {
 	 * Setzt das Geschäft
 	 * 
 	 * @param geschaeft Geschäft
+	 * @throws Exception falls das Geschäft null ist
 	 */
-	private void setGeschaeft(Geschaeft geschaeft) {
+	private void setGeschaeft(Geschaeft geschaeft) throws Exception {
+		if(geschaeft == null)
+			throw new Exception("setGeschaeft");
 		this.geschaeft = geschaeft;
 	}
 

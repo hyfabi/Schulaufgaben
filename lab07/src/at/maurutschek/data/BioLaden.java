@@ -17,8 +17,9 @@ public class BioLaden extends Geschaeft {
 	 * @param stadt Falls es sich in der Stadt befindet
 	 * @param angestellete Anzahl von Angestellten
 	 * @param anzahlProdukte Anzahl von Produkten
+	 * @throws Exception falls falscher oder garkein Input existiert
 	 */
-	public BioLaden(String name, boolean stadt, int angestellete, int anzahlProdukte) {
+	public BioLaden(String name, boolean stadt, int angestellete, int anzahlProdukte) throws Exception {
 		super(name, stadt, angestellete);
 		setAnzahlProdukte(anzahlProdukte);
 	}
@@ -37,10 +38,13 @@ public class BioLaden extends Geschaeft {
 	 * Darf nicht kleiner als 0 sein
 	 * 
 	 * @param anzahlProdukte Anzahl an Produkten
+	 * @throws Exception falls anzahlProdukte kleiner als 0 ist
 	 */
-	public void setAnzahlProdukte(int anzahlProdukte) {
+	public void setAnzahlProdukte(int anzahlProdukte) throws Exception {
 		if (anzahlProdukte >= 0)
 			this.anzahlProdukte = anzahlProdukte;
+		else
+			throw new Exception("setAnzahlProdukte: May not be smaller than 0");
 	}
 	
 	/**

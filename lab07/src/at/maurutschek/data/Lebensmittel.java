@@ -17,8 +17,9 @@ public class Lebensmittel extends Geschaeft {
 	 * @param stadt        Falls es sich in der Stadt befindet
 	 * @param angestellete Anzahl von Angestellten
 	 * @param kategorie    Die Kategorie des Geschäfts
+	 * @throws Exception falls falscher oder garkein Input existiert
 	 */
-	public Lebensmittel(String name, boolean stadt, int angestellete, char kategorie) {
+	public Lebensmittel(String name, boolean stadt, int angestellete, char kategorie) throws Exception {
 		super(name, stadt, angestellete);
 		setKategorie(kategorie);
 	}
@@ -36,10 +37,13 @@ public class Lebensmittel extends Geschaeft {
 	 * Setzt die Kategorie eines Geschäfts
 	 * 
 	 * @param kategorie Kategorie
+	 * @throws Exception falls keine richtige Ketegorie eingegeben wurde
 	 */
-	public void setKategorie(char kategorie) {
+	public void setKategorie(char kategorie) throws Exception {
 		if (kategorie == 'I' || kategorie == 'F' || kategorie == 'S')
 			this.kategorie = kategorie;
+		else
+			throw new Exception("False Input");
 	}
 
 	/**
@@ -65,10 +69,8 @@ public class Lebensmittel extends Geschaeft {
 		float f = 0;
 		if (this.stadt)
 			f += 200;
-		if (this.angestellete == 0) {
+		if (this.angestellete == 0)
 			return f;
-		}
-
 		f += getFoerderung(this.angestellete, 100);
 		return f;
 	}

@@ -5,7 +5,7 @@ package at.maurutschek.data;
  * Verwaltungsklasse + Main Fürs Verwalten von Geschäften
  * 
  * @author Fabian Maurutschek
- * @version Alpha 2.0
+ * @version Alpha 3.0
  */
 public class Verwaltung {
 
@@ -14,24 +14,29 @@ public class Verwaltung {
 	public static void main(String[] args) {
 		Verwaltung v = new Verwaltung();
 
-		v.addGeschaeft(new Lebensmittel(" ", true, 1, 'I'));
-		v.addGeschaeft(new Lebensmittel(" ", false, 1, 'F'));
-		v.addGeschaeft(new Lebensmittel(" ", false, 1, 'S'));
-		v.addGeschaeft(new BioLaden(" ", false, 1, 2));
-		v.addGeschaeft(new BioLaden(" ", true, 1, 1));
-		v.addGeschaeft(new BioLaden(" ", false, 1, 1));
-		v.addGeschaeft(new BioLaden(" ", false, 1, 1));
-		System.out.println("summeFoerderungen(): " + v.summeFoerderungen());
-		System.out.println("Ausgeben:");
-		v.ausgeben();
+		try {
+			v.addGeschaeft(new Lebensmittel(" ", true, 1, 'I'));
+			v.addGeschaeft(new Lebensmittel(" ", false, 1, 'F'));
+			v.addGeschaeft(new Lebensmittel(" ", false, 1, 'S'));
+			v.addGeschaeft(new BioLaden(" ", false, 1, 2));
+			v.addGeschaeft(new BioLaden(" ", true, 1, 1));
+			v.addGeschaeft(new BioLaden(" ", false, 1, 1));
+			v.addGeschaeft(new BioLaden(" ", false, 1, 1));
+			System.out.println("summeFoerderungen(): " + v.summeFoerderungen());
+			System.out.println("Ausgeben:");
+			v.ausgeben();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
 	 * Fügt ein Geschäft zur Liste hinzu
 	 * 
 	 * @param g Das Geschäft
+	 * @throws Exception falls das Geschäft null ist
 	 */
-	public void addGeschaeft(Geschaeft g) {
+	public void addGeschaeft(Geschaeft g) throws Exception {
 		if (this.root == null) {
 			this.root = new GeschaeftListKnoten(g);
 			return;
@@ -64,10 +69,13 @@ public class Verwaltung {
 
 	/**
 	 * Gibt alle Attribute von jedem EInzelnen geschäft aus
+	 * @throws Exception falls root null ist
 	 */
-	public void ausgeben() {
+	public void ausgeben() throws Exception {
 		if (this.root != null)
 			ausgeben(this.root);
+		else
+			throw new NullPointerException("No root");
 	}
 
 	/**

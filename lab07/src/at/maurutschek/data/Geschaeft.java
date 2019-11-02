@@ -26,8 +26,9 @@ public abstract class Geschaeft {
 	 * @param name Name des Geschäfts
 	 * @param stadt Falls es sich in der Stadt befindet
 	 * @param angestellete Anzahl von Angestellten
+	 * @throws Exception falls falscher oder garkein Input existiert
 	 */
-	public Geschaeft(String name, boolean stadt, int angestellete) {
+	public Geschaeft(String name, boolean stadt, int angestellete) throws Exception {
 		setAngestellete(angestellete);
 		setName(name);
 		setStadt(stadt);
@@ -46,8 +47,11 @@ public abstract class Geschaeft {
 	 * Setzt den Namen des Geschäfts
 	 * 
 	 * @param name Name des Geschäfts
+	 * @throws Exception falls der Name nichts oder null ist
 	 */
-	public void setName(String name) {
+	public void setName(String name) throws Exception {
+		if(name.isEmpty() || name == null)
+			throw new Exception("setName: Null or Empty" + this);
 		this.name = name;
 	}
 
@@ -82,8 +86,11 @@ public abstract class Geschaeft {
 	 * Setzt die Anzahl an Angestellten
 	 * 
 	 * @param angestellete Anzahl an Angestellten
+	 * @throws Exception falls angestallte weniger als 0 beträgt
 	 */
-	public void setAngestellete(int angestellete) {
+	public void setAngestellete(int angestellete) throws Exception {
+		if(angestellete < 0)
+			throw new Exception("setAngestellete: Less than 0");
 		this.angestellete = angestellete;
 	}
 

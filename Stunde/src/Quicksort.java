@@ -21,20 +21,20 @@ public class Quicksort {
 	
 	public int pivot(int i, int j, int pivot) {
 		if(i < j) {
-			if(a[i] < a[pivot]) {
+			if(this.a[i] < this.a[pivot]) {
 				return pivot(i+1, j, pivot);
-			}else if(a[j] > a[pivot]) {
+			}else if(this.a[j] > this.a[pivot]) {
 				return pivot(i, j-1, pivot);
 			}else {
-				int x = a[i];
-				a[i] = a[j];
-				a[j] = x;
+				int x = this.a[i];
+				this.a[i] = this.a[j];
+				this.a[j] = x;
 			}
 		}else {
-			if(a[pivot] < a[j]) {
-				int x = a[pivot];
-				a[pivot] = a[j];
-				a[j] = x;
+			if(this.a[pivot] < this.a[j]) {
+				int x = this.a[pivot];
+				this.a[pivot] = this.a[j];
+				this.a[j] = x;
 			}else {
 				return pivot;
 			}

@@ -1,7 +1,0 @@
-package at.maurutschek.rekursionen.liederbaum;
-
-public class LiederBaumKnoten {
-	private Lied l;
-	private LiederBaumKnoten rechts;
-	private LiederBaumKnoten links;
-}

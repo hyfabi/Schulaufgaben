@@ -12,12 +12,25 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Wed, 23 Oct 2019 09:14:34 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 02 Nov 2019 02:00:38 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	
 	<item>
+		<title>CodeMix 2019.10.29 &#8211; You Code, We Build</title>
+		<link>https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/</link>
+		<pubDate>Tue, 29 Oct 2019 20:36:14 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=629280</guid>
+		<description><![CDATA[<p>In this release we’re introducing a quick access control panel for Angular, a vastly improved validation and build pipeline, and we’ve made loads of reliability and stability fixes to the product, in response to your feedback. Core changes made in this version improve the efficiency of communication between CodeMix and the underlying Code OSS engine, resulting in a smoother dev experience.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/">CodeMix 2019.10.29 &#8211; You Code, We Build</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>React Native Authentication with Facebook</title>
 		<link>https://www.genuitec.com/react-native-authentication-with-facebook/</link>
 		<pubDate>Thu, 26 Sep 2019 20:05:49 +0000</pubDate>
@@ -207,23 +220,6 @@
 		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-4-11-is-here/">CodeMix 2019.4.11 is Here—Delivering the Best Coding Experience Yet!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>MyEclipse 2019.4.0 Is Here &#8211; Java 11 and More</title>
-		<link>https://www.genuitec.com/myeclipse-2019-4-0-is-here-java-11-and-more/</link>
-		<pubDate>Fri, 05 Apr 2019 17:40:39 +0000</pubDate>
-		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[MyEclipse 2019.4.0 release]]></category>
-		<category><![CDATA[myeclipse release]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=612056</guid>
-		<description><![CDATA[<p>Our latest release of MyEclipse, CI 2019.4.0, is here, bringing you Java 11 support, performance improvements, and new server connectors. We have also updated to Eclipse’s 2018-12 release train, including updates to all integrated tooling, from JPA support and reporting, to Maven and Spring.Java EnhancementsJava 11An integrated OpenJDK 11 build is part of this release: [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2019-4-0-is-here-java-11-and-more/">MyEclipse 2019.4.0 Is Here &#8211; Java 11 and More</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -232,5 +228,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2019-10-23 12:18:37 by W3 Total Cache
+Served from: www.genuitec.com @ 2019-11-02 00:09:18 by W3 Total Cache
 -->
