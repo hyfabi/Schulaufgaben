@@ -22,10 +22,9 @@ public class Obstbaum extends Baum{
 		return s;
 	}
 
-	//TODO Richtiges printen
 	@Override
 	public String toString() {
-		return super.toString() + "Obstbaum [ertrag=" + ertrag + ", wertProKilo=" + wertProKilo + "]";
+		return super.toString() + " Obstbaum [ertrag=" + ertrag + ", wertProKilo=" + wertProKilo + "]";
 	}
 
 	public float getErtrag() {

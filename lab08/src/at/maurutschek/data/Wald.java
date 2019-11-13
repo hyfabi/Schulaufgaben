@@ -11,11 +11,15 @@ public class Wald {
 	}
 	
 	public void pflanzeBaum(Baum b) {
-		baeume.add(b);
+		if(b != null && !baeume.contains(b))
+			baeume.add(b);
+		else
+			throw new RuntimeException();
 	}
 	
 	public void obstbaumPflanzen(String s) {
-		baeume.add(Obstbaum.readObstbaum(s));
+		if(s != null)
+			baeume.add(Obstbaum.readObstbaum(s));
 	}
 	
 	public void nadelbaumPflanzen(String s) {

@@ -59,7 +59,7 @@ public class Nadelbaum extends Baum{
 	//TODO Richtiges toString
 	@Override
 	public String toString() {
-		return super.toString() + "Nadelbaum [preisProMeter=" + preisProMeter + ", hoehe=" + hoehe + ", christbaum=" + christbaum + "]";
+		return super.toString() + " Nadelbaum [preisProMeter=" + preisProMeter + ", hoehe=" + hoehe + ", christbaum=" + christbaum + "]";
 	}
 
 	public static Baum readNadelbaum(String baumString) throws NumberFormatException, Exception {
