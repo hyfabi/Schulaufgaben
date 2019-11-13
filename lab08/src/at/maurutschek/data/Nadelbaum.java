@@ -1,6 +1,7 @@
 package at.maurutschek.data;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Nadelbaum extends Baum{
 	
@@ -10,7 +11,7 @@ public class Nadelbaum extends Baum{
 	
 	
 	
-	public Nadelbaum(String art, LocalDate datum, float preisProMeter, float hoehe, boolean christbaum) throws Exception {
+	public Nadelbaum(String art, LocalDate datum, float preisProMeter, float hoehe, boolean christbaum) {
 		super(art, datum);
 		setPreisProMeter(preisProMeter);
 		setHoehe(hoehe);
@@ -29,21 +30,22 @@ public class Nadelbaum extends Baum{
 		return preisProMeter;
 	}
 
-	public void setPreisProMeter(float preisProMeter) throws Exception {
+	public void setPreisProMeter(float preisProMeter){
 		if(preisProMeter > 0)
 			this.preisProMeter = preisProMeter;
 		else
-			throw new Exception();
+			throw new RuntimeException();
 	}
 
 	public float getHoehe() {
 		return hoehe;
 	}
 
-	public void setHoehe(float hoehe) throws Exception {
+	public void setHoehe(float hoehe){
 		if(hoehe > 0)
 			this.hoehe = hoehe;
-		throw new Exception();
+		else
+			throw new RuntimeException();
 	}
 
 	public boolean isChristbaum() {
@@ -62,7 +64,7 @@ public class Nadelbaum extends Baum{
 
 	public static Baum readNadelbaum(String baumString) throws NumberFormatException, Exception {
 		String[] a = baumString.split(":");
-		return new Nadelbaum(a[0], LocalDate.parse(a[1]), Float.parseFloat(a[2]), Float.parseFloat(a[3]), Boolean.parseBoolean(a[4]));
+		return new Nadelbaum(a[0], LocalDate.parse(a[1], DateTimeFormatter.ofPattern("dd.MM.yyyy")), Float.parseFloat(a[2]), Float.parseFloat(a[3]), Boolean.parseBoolean(a[4]));
 	}
 	
 }

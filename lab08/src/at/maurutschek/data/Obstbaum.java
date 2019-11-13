@@ -1,13 +1,14 @@
 package at.maurutschek.data;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Obstbaum extends Baum{
 
-	private int ertrag;
+	private float ertrag;
 	private float wertProKilo;
 	
-	public Obstbaum(String art, LocalDate datum, int ertrag, float wertProKilo) {
+	public Obstbaum(String art, LocalDate datum, float ertrag, float wertProKilo) {
 		super(art, datum);
 		this.ertrag = ertrag;
 		this.wertProKilo = wertProKilo;
@@ -24,14 +25,14 @@ public class Obstbaum extends Baum{
 	//TODO Richtiges printen
 	@Override
 	public String toString() {
-		return "Obstbaum [ertrag=" + ertrag + ", wertProKilo=" + wertProKilo + "]";
+		return super.toString() + "Obstbaum [ertrag=" + ertrag + ", wertProKilo=" + wertProKilo + "]";
 	}
 
-	public int getErtrag() {
+	public float getErtrag() {
 		return ertrag;
 	}
 
-	public void setErtrag(int ertrag) throws Exception {
+	public void setErtrag(float ertrag) throws Exception {
 		if(ertrag > 0)
 			this.ertrag = ertrag;
 		else
@@ -49,6 +50,9 @@ public class Obstbaum extends Baum{
 			throw new Exception();
 	}
 	
-	
+	public static Obstbaum readObstbaum(String baumString) {
+		String[] a = baumString.split(":");
+		return new Obstbaum(a[0], LocalDate.parse(a[1], DateTimeFormatter.ofPattern("dd.MM.yyyy")), Float.parseFloat(a[2]), Float.parseFloat(a[3]));
+	}
 	
 }
