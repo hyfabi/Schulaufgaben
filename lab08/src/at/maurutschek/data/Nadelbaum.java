@@ -4,14 +4,16 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Nadelbaum extends Baum{
-	
+
 	private float preisProMeter;
 	private float hoehe;
 	private boolean christbaum;
-	
-	
-	
-	public Nadelbaum(String art, LocalDate datum, float preisProMeter, float hoehe, boolean christbaum) {
+
+	public Nadelbaum(	String art,
+						LocalDate datum,
+						float preisProMeter,
+						float hoehe,
+						boolean christbaum){
 		super(art, datum);
 		setPreisProMeter(preisProMeter);
 		setHoehe(hoehe);
@@ -19,14 +21,14 @@ public class Nadelbaum extends Baum{
 	}
 
 	@Override
-	public float wert() {
+	public float wert(){
 		float s = preisProMeter * hoehe;
 		if(christbaum)
-			s*=2; 
+			s *= 2;
 		return s;
 	}
 
-	public float getPreisProMeter() {
+	public float getPreisProMeter(){
 		return preisProMeter;
 	}
 
@@ -37,7 +39,7 @@ public class Nadelbaum extends Baum{
 			throw new RuntimeException();
 	}
 
-	public float getHoehe() {
+	public float getHoehe(){
 		return hoehe;
 	}
 
@@ -48,22 +50,25 @@ public class Nadelbaum extends Baum{
 			throw new RuntimeException();
 	}
 
-	public boolean isChristbaum() {
+	public boolean isChristbaum(){
 		return christbaum;
 	}
 
-	public void setChristbaum(boolean christbaum) {
+	public void setChristbaum(boolean christbaum){
 		this.christbaum = christbaum;
 	}
 
 	@Override
-	public String toString() {
-		return super.toString() + " Nadelbaum [preisProMeter=" + preisProMeter + ", hoehe=" + hoehe + ", christbaum=" + christbaum + "]";
+	public String toString(){
+		return super.toString() + " Nadelbaum [preisProMeter=" + preisProMeter + ", hoehe=" + hoehe
+					+ ", christbaum="
+					+ christbaum + "]";
 	}
 
-	public static Baum readNadelbaum(String baumString) {
+	public static Baum readNadelbaum(String baumString){
 		String[] a = baumString.split(":");
-		return new Nadelbaum(a[0], LocalDate.parse(a[1], DateTimeFormatter.ofPattern("dd.MM.yyyy")), Float.parseFloat(a[2]), Float.parseFloat(a[3]), Boolean.parseBoolean(a[4]));
+		return new Nadelbaum(a[0], LocalDate.parse(a[1], DateTimeFormatter.ofPattern("dd.MM.yyyy")),
+					Float.parseFloat(a[2]), Float.parseFloat(a[3]), Boolean.parseBoolean(a[4]));
 	}
-	
+
 }

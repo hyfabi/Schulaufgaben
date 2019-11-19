@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="org.eclipse.jdt.ui.formatter_page.show_invisible_characters"/>
+	<item value="true" key="ProjectSelectionDialog.show_all"/>
+	<item value="-9" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_x"/>
+	<item value="-9" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_y"/>
+	<item value="64" key="org.eclipse.jdt.ui.codeformatter.line_wrapping_tab_page.preview_line_width"/>
+	<item value="00..0.0.110.0.0.0.0.0.0.0.0.0..10.1.1.1.1.1.1.1.1.1.0..11.1.1.1.1.1..10.0.0.0..10.0.1.1...11.1..11.11..1..111.1.1.1.0.0.0.0.0.0...11.1..1.." key="org.eclipse.jdt.uiformatter_page.preference_tree_expansion"/>
+	<item value="812" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_left_width"/>
+	<item value="1938" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_width"/>
+	<item value="1060" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height"/>
+	<item value="3468" key="org.eclipse.jdt.uiformatter_page.preference_scroll_position"/>
+	<item value="244" key="org.eclipse.jdt.uiformatter_page.last_focus_index"/>
+	<item value="1077" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_rigth_width"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<list key="workingset_selection_history">
 		<item value="Stunde"/>
@@ -18,9 +30,9 @@
 		<item value="false" key="expanded3"/>
 		<item value="false" key="expanded6"/>
 		<item value="false" key="expanded5"/>
-		<item value="false" key="expanded8"/>
+		<item value="true" key="expanded8"/>
 		<item value="false" key="expanded7"/>
-		<item value="true" key="expanded0"/>
+		<item value="false" key="expanded0"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
@@ -77,6 +89,18 @@
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
+	</section>
+	<section name="JavaBuildConfigurationBlock">
+		<item value="true" key="expanded2"/>
+		<item value="true" key="expanded1"/>
+		<item value="true" key="expanded0"/>
+	</section>
+	<section name="DialogBounds_AddDelegateMethodsDialog">
+		<item value="689" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="718" key="DIALOG_HEIGHT"/>
+		<item value="625" key="DIALOG_X_ORIGIN"/>
+		<item value="52" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="true" key="IgnoreDefault"/>
