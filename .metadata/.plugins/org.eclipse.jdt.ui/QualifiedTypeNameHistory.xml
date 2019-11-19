@@ -25,7 +25,19 @@
 <fullyQualifiedTypeName name="at.maurutschek.data.BioLaden"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.GeschaeftListKnoten"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Lebensmittel"/>
-<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatterBuilder"/>
+<fullyQualifiedTypeName name="javax.xml.ws.EndpointReference"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Nadelbaum"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Baum"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Obstbaum"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Wald"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>

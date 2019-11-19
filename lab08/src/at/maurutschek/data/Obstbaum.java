@@ -31,22 +31,22 @@ public class Obstbaum extends Baum{
 		return ertrag;
 	}
 
-	public void setErtrag(float ertrag) throws Exception {
+	public void setErtrag(float ertrag) {
 		if(ertrag > 0)
 			this.ertrag = ertrag;
 		else
-			throw new Exception();
+			throw new RuntimeException();
 	}
 
 	public float getWertProKilo() {
 		return wertProKilo;
 	}
 
-	public void setWertProKilo(float wertProKilo) throws Exception {
+	public void setWertProKilo(float wertProKilo) {
 		if(wertProKilo > 0)
 			this.wertProKilo = wertProKilo;
 		else
-			throw new Exception();
+			throw new RuntimeException();
 	}
 	
 	public static Obstbaum readObstbaum(String baumString) {

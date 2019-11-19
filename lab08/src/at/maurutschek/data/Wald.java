@@ -20,14 +20,15 @@ public class Wald {
 	public void obstbaumPflanzen(String s) {
 		if(s != null)
 			baeume.add(Obstbaum.readObstbaum(s));
+		else
+			throw new NullPointerException();
 	}
 	
 	public void nadelbaumPflanzen(String s) {
-		try {
+		if(s != null && !s.trim().isEmpty())
 			baeume.add(Nadelbaum.readNadelbaum(s));
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
+		else
+			throw new NullPointerException();
 	}
 	
 	public boolean baumFaellen(String art) {

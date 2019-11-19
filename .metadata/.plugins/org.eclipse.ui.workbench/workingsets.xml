@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969829624_0" label="Java Main Sources" name="main">
+<item elementID="=CodingContest/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab08/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969829648_1" label="Java Test Sources" name="test"/>
@@ -11,11 +12,12 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab06" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab05" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab07" type="4"/>
+<item elementID="=lab08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Aufgabe01" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Aufgabe02" type="4"/>
-<item elementID="=lab08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213718613_6" label="Stunde" name="Stunde">
+<item elementID="=CodingContest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Stunde" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969844201_2" label="Window Working Set" name="Aggregate for window 1569969844201"/>

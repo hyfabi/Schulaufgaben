@@ -56,13 +56,12 @@ public class Nadelbaum extends Baum{
 		this.christbaum = christbaum;
 	}
 
-	//TODO Richtiges toString
 	@Override
 	public String toString() {
 		return super.toString() + " Nadelbaum [preisProMeter=" + preisProMeter + ", hoehe=" + hoehe + ", christbaum=" + christbaum + "]";
 	}
 
-	public static Baum readNadelbaum(String baumString) throws NumberFormatException, Exception {
+	public static Baum readNadelbaum(String baumString) {
 		String[] a = baumString.split(":");
 		return new Nadelbaum(a[0], LocalDate.parse(a[1], DateTimeFormatter.ofPattern("dd.MM.yyyy")), Float.parseFloat(a[2]), Float.parseFloat(a[3]), Boolean.parseBoolean(a[4]));
 	}

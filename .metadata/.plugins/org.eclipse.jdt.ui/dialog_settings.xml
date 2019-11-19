@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<list key="workingset_selection_history">
+		<item value="Stunde"/>
 		<item value="Aufgaben"/>
 	</list>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -88,6 +89,13 @@
 		<item value="false" key="SkipNull"/>
 		<item value="false" key="FinalModifier"/>
 		<item value="10" key="LimitValue"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
+		<item value="801" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="-29" key="DIALOG_X_ORIGIN"/>
+		<item value="39" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="RenameInformationPopup">
 	</section>

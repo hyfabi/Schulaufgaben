@@ -23,7 +23,7 @@ public abstract class Baum {
 		if(!art.isEmpty() && art != null)
 			this.art = art;
 		else
-			throw new NullPointerException();
+			throw new RuntimeException();
 	}
 	
 	public LocalDate getDatum() {
@@ -31,26 +31,22 @@ public abstract class Baum {
 	}
 	
 	public void setDatum(LocalDate datum) {
-		if(datum.isBefore(LocalDate.now()))
+		if(datum.isBefore(LocalDate.now()) || datum.isEqual(LocalDate.now()))
 			this.datum = datum;
 		else
-			this.datum = LocalDate.now().minusYears(1);
+			throw new RuntimeException();
 	}
 	
-	//TODO Jahre zurückgeben
 	public int altersUnterschied(Baum b) {
-		int a = datum.compareTo(b.datum);
-		if(a < 1)
-			a*= -1;
+		int a = Math.abs(datum.compareTo(b.datum));
+		if(datum.getMonthValue()>5)
+			a++;
 		return a;
 	}
 
 	@Override
 	public String toString() {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM y");
-		String text = datum.format(formatter);
-		LocalDate parsedDate = LocalDate.parse(text, formatter);
-		return "Baum [art=" + art + ", datum=" + parsedDate + "]";
+		return "Baum [art=" + art + ", datum=" + datum.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")) + "]";
 	}
 	
 	
