@@ -121,20 +121,12 @@ public class Handy{
 	}
 
 	@Override
-	public int hashCode(){
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + laufzeit;
-		return result;
-	}
-
-	@Override
 	public boolean equals(Object obj){
 		if(this == obj) return true;
 		if(obj == null) return false;
 		if(getClass() != obj.getClass()) return false;
 		Handy other = (Handy) obj;
-		if(laufzeit != other.laufzeit) return false;
+		if(telefonnummer != other.telefonnummer) return false;
 		return true;
 	}
 

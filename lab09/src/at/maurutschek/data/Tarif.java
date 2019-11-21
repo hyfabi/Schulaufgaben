@@ -6,9 +6,6 @@ package at.maurutschek.data;
  *
  */
 public enum Tarif{
-	FIRMA(12), PRIVAT(45), GRUPPE(0);
+	FIRMA, PRIVAT, GRUPPE;
 
-	private Tarif(int laenge){
-
-	}
 }
