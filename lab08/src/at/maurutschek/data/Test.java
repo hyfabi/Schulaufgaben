@@ -14,9 +14,9 @@ public class Test{
 		w.pflanzeBaum(b3);
 		w.pflanzeBaum(b4);
 		w.baumFaellen("lol1");
-		w.nadelbaumPflanzen("Fichte:24.11.2014:0.5:2.5:true");
+		System.out.println(Nadelbaum.readNadelbaum("Fichte:24.11.2014:0.5:2.5:true"));
 		w.obstbaumPflanzen("Marillenbaum:24.11.2014:78:3.5");
-		w.baeumeGruppiertAusgeben();
+// w.baeumeGruppiertAusgeben();
 // System.out.println(w.berechneWert());
 
 		System.out.println(b1.altersUnterschied(b2));
