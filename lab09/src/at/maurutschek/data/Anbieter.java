@@ -1,6 +1,5 @@
 package at.maurutschek.data;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -37,18 +36,23 @@ public class Anbieter{
 				System.out.println(h);
 	}
 
-	public ArrayList<Handy> abgelaufeneHandys(){
-		ArrayList<Handy> l = new ArrayList<>();
-		for(Handy h : handies){
-			if(h.wielange().isNegative())
-				h.setGesperrt(true);
+	public LinkedList<Handy> abgelaufeneHandys(){
+		ueberpruefeObGesperrt();
+		LinkedList<Handy> l = new LinkedList<>();
+		for(Handy h : handies)
 			if(h.isGesperrt())
 				l.add(h);
-		}
 		return l;
 	}
 
+	private void ueberpruefeObGesperrt(){
+		for(Handy h : handies)
+			if(h.wielange().isNegative())
+				h.setGesperrt(true);
+	}
+
 	public void delGesperrteHandys(){
+		ueberpruefeObGesperrt();
 		Iterator<Handy> i = handies.iterator();
 		while(i.hasNext())
 			if(i.next().isGesperrt())
