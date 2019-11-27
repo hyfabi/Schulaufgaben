@@ -56,7 +56,7 @@ public class Handy{
 	}
 
 	public void setTelefonnummer(String telefonnummer){
-		if(telefonnummer != null && telefonnummer.length() > 9
+		if(telefonnummer != null && telefonnummer.length() >= 9
 					&& telefonnummer.toLowerCase().equals(telefonnummer.toUpperCase()))
 			this.telefonnummer = telefonnummer;
 		else
