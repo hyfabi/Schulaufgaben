@@ -7,5 +7,4 @@ package at.maurutschek.data;
  */
 public enum Tarif{
 	FIRMA, PRIVAT, GRUPPE;
-
 }

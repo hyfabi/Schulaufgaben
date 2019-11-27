@@ -18,7 +18,7 @@ public class Fach{
 	}
 
 	public void setNote(byte note) throws Exception{
-		if(note > 0 && note <= 5)
+		if(note >= 0 && note <= 5)
 			this.note = note;
 		else
 			throw new Exception("Fehler in der Notenvergabe!");
@@ -29,7 +29,7 @@ public class Fach{
 	}
 
 	public void setName(String name) throws Exception{
-		if(name != null && name.trim().isEmpty())
+		if(name != null && !name.trim().isEmpty())
 			this.name = name;
 		else
 			throw new Exception("Fehler bei der Namensgebung im Fach");
