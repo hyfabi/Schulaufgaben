@@ -21,11 +21,11 @@ public class Test{
 								LocalDate.now().minusDays(333),
 								true, 3),
 					h3 = new Handy("Cserichh", Tarif.GRUPPE, "+43000000000",
-								LocalDate.now().minusDays(-1),
+								LocalDate.now().minusDays(1),
 								true, 3),
 					h4 = new Handy("Das zwölfjährige Mädchen aus Graz", Tarif.GRUPPE,
 								"+436802081881",
-								LocalDate.now().minusDays(2000),
+								LocalDate.now().minusDays(200),
 								true, 3);
 		a.add(h1);
 		a.add(h2);

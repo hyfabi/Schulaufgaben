@@ -53,6 +53,7 @@ public class Anbieter{
 
 	public void delGesperrteHandys(){
 		ueberpruefeObGesperrt();
+
 		Iterator<Handy> i = handies.iterator();
 		while(i.hasNext())
 			if(i.next().isGesperrt())

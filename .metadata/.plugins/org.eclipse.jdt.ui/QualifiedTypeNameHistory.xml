@@ -43,10 +43,11 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="javafx.animation.Interpolator"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Anbieter"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Handy"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Nadelbaum"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Tarif"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.AALOAD"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>
