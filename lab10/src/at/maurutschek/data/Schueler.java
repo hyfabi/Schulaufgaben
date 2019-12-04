@@ -1,6 +1,3 @@
-/**
- * 
- */
 package at.maurutschek.data;
 
 import java.time.LocalDate;
@@ -84,11 +81,11 @@ public class Schueler{
 	public Collection<Fach> besteFaecher(){
 		int x = 6;
 		for(Fach f : faecher)
-			if(f.getNote() > x && f.getNote() != 0)
+			if(f.getNote() < x && f.getNote() != 0)
 				x = f.getNote();
 		if(x == 6)
 			x = 0;
-		List<Fach> c = new ArrayList<>();
+		Collection<Fach> c = new ArrayList<>();
 		for(Fach f : faecher)
 			if(f.getNote() == x)
 				c.add(f);

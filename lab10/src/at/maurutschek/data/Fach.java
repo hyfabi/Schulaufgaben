@@ -1,6 +1,3 @@
-/**
- * 
- */
 package at.maurutschek.data;
 
 /**

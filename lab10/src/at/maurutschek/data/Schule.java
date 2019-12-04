@@ -1,6 +1,3 @@
-/**
- * 
- */
 package at.maurutschek.data;
 
 import java.time.LocalDate;
@@ -34,6 +31,12 @@ public class Schule{
 		}
 	}
 
+	public Schueler addSchueler(Schueler s){
+		if(!schueler.containsValue(s))
+			return schueler.put(s.getSchluessel(), s);
+		return null;
+	}
+
 	public Schueler delSchueler(String schluessel){
 		if(schueler.containsKey(schluessel)) return schueler.remove(schluessel);
 		return null;
@@ -41,5 +44,11 @@ public class Schule{
 
 	public Schueler getSchueler(String schluessel){
 		return schueler.get(schluessel);
+	}
+
+	public void anzeigen(){
+		for(Schueler s : schueler.values()){
+			System.out.println(s.toString());
+		}
 	}
 }
