@@ -100,13 +100,11 @@ public class Getraenkelager{
 	}
 
 	public void auflistenGruppiert(){
-		ArrayList<String> besitzer = getBesitzer();
-		for(String b : besitzer){
+		for(String b : getBesitzer()){
 			System.out.println(b + ":");
-			for(Getraenk g : lager){
+			for(Getraenk g : lager)
 				if(g.getBesitzer().equals(b))
 					System.out.println("\t" + g);
-			}
 		}
 	}
 }
