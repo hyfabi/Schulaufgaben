@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="at.maurutschek.test.Main"/>
-<fullyQualifiedTypeName name="at.maurutschek.daten.Liederliste"/>
-<fullyQualifiedTypeName name="at.maurutschek.daten.LiederListknoten"/>
-<fullyQualifiedTypeName name="at.maurutschek.daten.Lied"/>
 <fullyQualifiedTypeName name="daten.MyQueue"/>
 <fullyQualifiedTypeName name="daten.LiederlistKnoten"/>
 <fullyQualifiedTypeName name="daten.Lied"/>
@@ -33,7 +29,6 @@
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
 <fullyQualifiedTypeName name="java.time.Period"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="at.maurutschek.data.Schueler"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.GetraenkeException"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Getraenk.Ort"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.impl.ior.GenericTaggedComponent"/>
+<fullyQualifiedTypeName name="at.maurutschek.data.Getraenk"/>
 </qualifiedTypeNameHistroy>
