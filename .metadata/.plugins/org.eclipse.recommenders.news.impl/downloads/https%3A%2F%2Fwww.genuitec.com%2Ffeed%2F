@@ -12,12 +12,25 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Tue, 10 Dec 2019 17:17:28 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 14 Jan 2020 20:52:04 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	
 	<item>
+		<title>Building Applications With The Vue 3 Composition API</title>
+		<link>https://www.genuitec.com/building-applications-vue-3-composition-api/</link>
+		<pubDate>Thu, 19 Dec 2019 21:17:34 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[vue]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=634396</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/building-applications-vue-3-composition-api/">Building Applications With The Vue 3 Composition API</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>MyEclipse 2019.12.5 &#8211; Now, Just MyEclipse</title>
 		<link>https://www.genuitec.com/myeclipse-2019-12-5-now-just-myeclipse/</link>
 		<pubDate>Thu, 05 Dec 2019 18:48:51 +0000</pubDate>
@@ -197,18 +210,6 @@
 		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/stop-slow-eclipse-myeclipse-startups/">Stop Slow Eclipse and MyEclipse Startups on Windows 10</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Big Release, Big Thank You!</title>
-		<link>https://www.genuitec.com/big-release-big-thank-you/</link>
-		<pubDate>Wed, 19 Jun 2019 19:52:03 +0000</pubDate>
-		<dc:creator><![CDATA[Rocio Trujillo]]></dc:creator>
-				<category><![CDATA[General]]></category>
-		<category><![CDATA[Genuitec]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=616355</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/big-release-big-thank-you/">Big Release, Big Thank You!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -217,5 +218,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2019-12-10 12:12:06 by W3 Total Cache
+Served from: www.genuitec.com @ 2020-01-14 19:04:09 by W3 Total Cache
 -->

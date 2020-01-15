@@ -41,7 +41,7 @@ public class Wetterdaten{
 			throw new IOException("Is Directory unable to write");
 		FileWriter fw = new FileWriter(f, true);
 		for(Messwert m : daten)
-			fw.write(m.toString());
+			fw.append(m.toString());
 		fw.close();
 
 	}

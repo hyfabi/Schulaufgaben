@@ -5,4 +5,10 @@
 		<item value="C:\Users\spamm\OneDrive\Desktop\Lab05"/>
 		<item value="C:\Users\spamm\OneDrive\Desktop\03LiederStackundQueue"/>
 	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
 </section>
