@@ -5,9 +5,6 @@
 <item elementID="=lab16/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab16/res" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab14/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab13.1/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Aufgabe01/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Aufgabe02/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab03/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab04/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab05/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -18,26 +15,26 @@
 <item elementID="=lab10/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab11/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab12/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab02/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab01/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969829648_1" label="Java Test Sources" name="test"/>
-<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213630294_3" label="Cserich" name="Cserich"/>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213705362_5" label="Aufgaben" name="Aufgaben">
-<item elementID="=lab13.1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab09" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab12" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab16" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Aufgabe01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab06" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab11" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab15" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Aufgabe02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=lab14" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab06" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213718613_6" label="Stunde" name="Stunde">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CodingContest" type="4"/>
@@ -49,5 +46,4 @@
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969844201_2" label="Window Working Set" name="Aggregate for window 1569969844201"/>
 <mruList name="CCC"/>
-<mruList name="Cserich"/>
 </workingSetManager>

@@ -57,6 +57,7 @@ public class Lebensmittel extends Geschaeft {
 	/**
 	 * Überschreiben von der ausgeben() Methode
 	 */
+	@Override
 	public void ausgeben() {
 		System.out.println("Lebensmittel [" + super.toString() + toString() + "]");
 	}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="workingset_selection_history">
-		<item value="Cserich"/>
+		<item value="Aufgaben"/>
 	</list>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="291" key="DIALOG_X_ORIGIN"/>
@@ -36,5 +36,7 @@
 		<item value="949" key="DIALOG_HEIGHT"/>
 		<item value="127" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>
