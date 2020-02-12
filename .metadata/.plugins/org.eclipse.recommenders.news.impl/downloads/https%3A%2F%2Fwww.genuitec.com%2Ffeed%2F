@@ -12,12 +12,27 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Tue, 14 Jan 2020 20:52:04 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 11 Feb 2020 05:41:11 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	
 	<item>
+		<title>How to Build a CRUD application using React and Django</title>
+		<link>https://www.genuitec.com/how-to-build-crud-application-using-react-and-django/</link>
+		<pubDate>Thu, 30 Jan 2020 17:58:29 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[CRUD]]></category>
+		<category><![CDATA[django]]></category>
+		<category><![CDATA[react]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=637495</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/how-to-build-crud-application-using-react-and-django/">How to Build a CRUD application using React and Django</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>Building Applications With The Vue 3 Composition API</title>
 		<link>https://www.genuitec.com/building-applications-vue-3-composition-api/</link>
 		<pubDate>Thu, 19 Dec 2019 21:17:34 +0000</pubDate>
@@ -196,20 +211,6 @@
 		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/beginners-guide-to-vue-modals/">Beginner&#8217;s Guide to Vue Modals</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Stop Slow Eclipse and MyEclipse Startups on Windows 10</title>
-		<link>https://www.genuitec.com/stop-slow-eclipse-myeclipse-startups/</link>
-		<pubDate>Tue, 25 Jun 2019 23:15:34 +0000</pubDate>
-		<dc:creator><![CDATA[Mauricio Valenzuela]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[General]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=616624</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/stop-slow-eclipse-myeclipse-startups/">Stop Slow Eclipse and MyEclipse Startups on Windows 10</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -218,5 +219,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2020-01-14 19:04:09 by W3 Total Cache
+Served from: www.genuitec.com @ 2020-02-11 16:58:27 by W3 Total Cache
 -->

@@ -1,0 +1,10 @@
+Button,50,50,90,90,1.jpg
+Label,Keep,200,100,15,10
+Label,Smiling,200,100,10,30
+Label,Keep,200,100,200,10
+Label,Programming,200,100,170,30
+TextField,40,20,10,180
+TextField,40,20,200,180
+Label,3.jpg,50,20,30,198
+Label,4.jpg,50,20,180,198
+Label,2.jpg,150,20,50,215
