@@ -1,4 +1,17 @@
 eclipse.preferences.version=1
+org.eclipse.ant.ui.Color=189,72,72
+org.eclipse.ant.ui.commentsColor=214,44,44
+org.eclipse.ant.ui.constantStringsColor=209,23,140
+org.eclipse.ant.ui.customtemplates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.ant.ui.debugColor=235,235,235
+org.eclipse.ant.ui.dtdColor=120,2,136
+org.eclipse.ant.ui.informationColor=121,171,255
+org.eclipse.ant.ui.processingInstructionsColor=248,221,252
+org.eclipse.ant.ui.tagsColor=120,2,136
+org.eclipse.ant.ui.textColor=248,221,252
+org.eclipse.ant.ui.verboseColor=209,151,217
+org.eclipse.ant.ui.warningColor=255,198,0
+overriddenByCSS=,org.eclipse.ant.ui.Color,org.eclipse.ant.ui.commentsColor,org.eclipse.ant.ui.constantStringsColor,org.eclipse.ant.ui.debugColor,org.eclipse.ant.ui.dtdColor,org.eclipse.ant.ui.informationColor,org.eclipse.ant.ui.processingInstructionsColor,org.eclipse.ant.ui.tagsColor,org.eclipse.ant.ui.textColor,org.eclipse.ant.ui.verboseColor,org.eclipse.ant.ui.warningColor,
 problem_classpath=warning
 problem_imports=warning
 problem_properties=ignore

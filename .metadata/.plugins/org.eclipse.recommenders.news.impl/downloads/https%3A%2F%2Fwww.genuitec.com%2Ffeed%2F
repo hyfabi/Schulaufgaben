@@ -12,12 +12,77 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Tue, 11 Feb 2020 05:41:11 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 05 May 2020 05:55:09 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	
 	<item>
+		<title>CodeTogether 1.1: Now with Seamless Pair Programming for Eclipse, VS Code, and IntelliJ</title>
+		<link>https://www.genuitec.com/codetogether-1-1/</link>
+		<pubDate>Wed, 29 Apr 2020 19:15:54 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=656024</guid>
+		<description><![CDATA[<p>CodeTogether 1.1 now available - for pair programming from anywhere! This release includes new features and key fixes. It concludes the early access phase for our Eclipse and VS Code solutions, and introduces early access support for IntelliJ-based IDEs.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-1-1/">CodeTogether 1.1: Now with Seamless Pair Programming for Eclipse, VS Code, and IntelliJ</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Pair Programming from Anywhere with CodeTogether!</title>
+		<link>https://www.genuitec.com/pair-programming-codetogether/</link>
+		<pubDate>Thu, 09 Apr 2020 16:30:04 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=651821</guid>
+		<description><![CDATA[<p>We are happy to introduce CodeTogether, a great solution for pair programming from anywhere. Currently supports Eclipse and VS Code, with IntelliJ support coming soon. Download and use CodeTogether now - it's free! </p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/pair-programming-codetogether/">Pair Programming from Anywhere with CodeTogether!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Minor Security Update for MyEclipse and Angular IDE on macOS Catalina</title>
+		<link>https://www.genuitec.com/security-update-macos-catalina/</link>
+		<pubDate>Mon, 23 Mar 2020 22:26:23 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=648274</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/security-update-macos-catalina/">Minor Security Update for MyEclipse and Angular IDE on macOS Catalina</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Genuitec and COVID-19</title>
+		<link>https://www.genuitec.com/genuitec-and-covid-19/</link>
+		<pubDate>Fri, 13 Mar 2020 20:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=645115</guid>
+		<description><![CDATA[<p>Many of us are feeling the direct impact of the Coronavirus in our lives and work. Our hearts and thoughts are with all dealing with the brunt of this novel virus. We understand the disruption this can have on you and your loved ones. We want to assure our user base that Genuitec will continue [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/genuitec-and-covid-19/">Genuitec and COVID-19</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2020.2.25 &#8211; Angular 9 and More!</title>
+		<link>https://www.genuitec.com/codemix-2020-2-25-angular-9-and-more/</link>
+		<pubDate>Wed, 26 Feb 2020 11:34:59 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=643272</guid>
+		<description><![CDATA[<p>In this CodeMix release we’re introducing a quick access control panel in the editor for all supported CodeMix file types, Angular 9 support, an updated Chromium browser for Live Preview, along with a number of other improvements and fixes.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2020-2-25-angular-9-and-more/">CodeMix 2020.2.25 &#8211; Angular 9 and More!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>How to Build a CRUD application using React and Django</title>
 		<link>https://www.genuitec.com/how-to-build-crud-application-using-react-and-django/</link>
 		<pubDate>Thu, 30 Jan 2020 17:58:29 +0000</pubDate>
@@ -144,73 +209,6 @@
 		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/upload-files-using-vue-and-firebase/">Upload files using Vue and Firebase</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Ingenuity + Awesome Customers = Optimal CodeMix Performance</title>
-		<link>https://www.genuitec.com/optimal-codemix-performance/</link>
-		<pubDate>Thu, 01 Aug 2019 15:03:14 +0000</pubDate>
-		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[In Product]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[codemix]]></category>
-		<category><![CDATA[codemix release]]></category>
-		<category><![CDATA[software release]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=619206</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/optimal-codemix-performance/">Ingenuity + Awesome Customers = Optimal CodeMix Performance</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>Angular Library Tutorial</title>
-		<link>https://www.genuitec.com/angular-library-tutorial/</link>
-		<pubDate>Tue, 30 Jul 2019 15:14:03 +0000</pubDate>
-		<dc:creator><![CDATA[dunebook7]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=619045</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/angular-library-tutorial/">Angular Library Tutorial</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>Build a simple Cryptocurrency App using Angular 8</title>
-		<link>https://www.genuitec.com/build-a-simple-cryptocurrency-app-using-angular-8/</link>
-		<pubDate>Tue, 23 Jul 2019 20:35:44 +0000</pubDate>
-		<dc:creator><![CDATA[dunebook7]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[How-to's]]></category>
-		<category><![CDATA[Angular]]></category>
-		<category><![CDATA[angular ide]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=618081</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/build-a-simple-cryptocurrency-app-using-angular-8/">Build a simple Cryptocurrency App using Angular 8</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>CodeMix Fun Friday Links</title>
-		<link>https://www.genuitec.com/codemix-fun-friday-links-1/</link>
-		<pubDate>Fri, 12 Jul 2019 19:00:19 +0000</pubDate>
-		<dc:creator><![CDATA[Mauricio Valenzuela]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Fun/Funny]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[codemix]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=615134</guid>
-		<description><![CDATA[<p>Hi folks, Welcome to CodeMix Fun Friday Links, where you can find a lot of interesting code Developers are having fun with, we wanted to check out some of those projects and see them working using our latest CodeMix release. Here are 5 examples of things we found interesting and wanted to share them, don&#8217;t [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-fun-friday-links-1/">CodeMix Fun Friday Links</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>Beginner&#8217;s Guide to Vue Modals</title>
-		<link>https://www.genuitec.com/beginners-guide-to-vue-modals/</link>
-		<pubDate>Fri, 05 Jul 2019 15:02:57 +0000</pubDate>
-		<dc:creator><![CDATA[dunebook7]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=616831</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/beginners-guide-to-vue-modals/">Beginner&#8217;s Guide to Vue Modals</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -219,5 +217,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2020-02-11 16:58:27 by W3 Total Cache
+Served from: www.genuitec.com @ 2020-05-05 09:41:16 by W3 Total Cache
 -->

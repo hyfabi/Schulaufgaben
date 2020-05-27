@@ -6,12 +6,43 @@
 		<item value="C:\Users\spamm\OneDrive\Desktop\Lab05"/>
 		<item value="C:\Users\spamm\OneDrive\Desktop\03LiederStackundQueue"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_WIDTH" value="662"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_HEIGHT" value="452"/>
+		<item key="DIALOG_X_ORIGIN" value="629"/>
+		<item key="DIALOG_Y_ORIGIN" value="220"/>
+	</section>
 	<section name="ExternalProjectImportWizard">
 	</section>
+	<section name="DialogMarkerPropertiesDialogSettings">
+		<item key="DIALOG_WIDTH" value="949"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="351"/>
+		<item key="DIALOG_X_ORIGIN" value="495"/>
+		<item key="DIALOG_Y_ORIGIN" value="296"/>
+	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.fx.ide"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+		<item key="SELECTED_FILTER_GROUP" value="FIX"/>
+		<list key="PREV_SELECTED_ELEMENTS">
+			<item value="FIX"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="false"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\spamm\AppData\Roaming\Microsoft\Windows\Libraries\2BHIF\POS\Eclipse\workspaces\schule\lab24.1"/>
+			<item value="C:\Users\spamm\AppData\Roaming\Microsoft\Windows\Libraries\2BHIF\POS\Eclipse\workspaces\schule"/>
 		</list>
 	</section>
 </section>

@@ -1,0 +1,1 @@
+Joa ich habe nur Probiert wie sockets funktioineren. Die resourcen sind nicht da

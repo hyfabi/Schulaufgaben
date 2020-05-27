@@ -1,7 +1,7 @@
 eclipse.preferences.version=1
-editor.color.default=216,216,216
-editor.color.procInstr=255,255,255
-editor.color.string=255,198,0
-editor.color.tag=255,255,255
-editor.color.xmlComment=199,221,12
+editor.color.default=248,221,252
+editor.color.procInstr=120,2,136
+editor.color.string=209,23,140
+editor.color.tag=120,2,136
+editor.color.xmlComment=214,44,44
 overriddenByCSS=,editor.color.string,editor.color.tag,editor.color.default,editor.color.procInstr,editor.color.xmlComment,

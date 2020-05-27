@@ -1,10 +1,11 @@
 CLOSE_UNRELATED_PROJECTS=true
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 IMPORT_FILES_AND_FOLDERS_RELATIVE=true
-IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1\:7,1
 PROBLEMS_FILTERS_MIGRATE=true
 TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
-platformState=1536617584503
+org.eclipse.ui.internal.views.markers.CachedMarkerBuilderorg.eclipse.ui.views.TaskList=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<filterGroups andFilters\="false" markerLimit\="100" markerLimitEnabled\="true">\r\n<filterGroup IMemento.internal.id\="TODOs" enabled\="false" filterLimit\="-1" scope\="2" workingSet\="Aggregate for window 1569969844201">\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.completionField" completion\="3"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.priorityField" selectedPriorities\="7"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.descriptionField" containsModifier\="CONTAINS" containsText\="TODO"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.markerType"/>\r\n</filterGroup>\r\n<filterGroup IMemento.internal.id\="USER1584629807682" enabled\="false" filterLimit\="0" name\="FIX" scope\="0" workingSet\="Aggregate for window 1569969844201">\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.completionField" completion\="3"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.priorityField" selectedPriorities\="7"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.descriptionField" containsModifier\="CONTAINS" containsText\="FIX"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.markerType"/>\r\n</filterGroup>\r\n</filterGroups>
+platformState=1588708517654
 quickStart=false
-tipsAndTricks=true
+tipsAndTricks=false

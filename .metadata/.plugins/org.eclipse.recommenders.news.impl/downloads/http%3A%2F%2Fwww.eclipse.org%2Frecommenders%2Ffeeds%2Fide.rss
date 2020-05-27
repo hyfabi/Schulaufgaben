@@ -243,13 +243,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="visible-xs" href="#top">Back to the top</a>
 </p>
       <!-- Sign Up to our Newsletter -->
-    <div class="featured-footer featured-footer-newsletter" style="background-size:cover;background-image:url(https://eclipse.org/home/images/iotcomm_bkgbanner.png);border-bottom:1px solid #ccc;background-position:initial;">
+    <div class="featured-footer featured-footer-newsletter" style="background-size:cover;background-image:url(https://eclipse.org/home/images/jakartaee-dev-survey-2020.png);border-bottom:1px solid #ccc;border-top:1px solid #ccc;background-position:bottom;">
       <div class="container">
         <div class="row">
           <div class="col-sm-24">
-            <h2><strong>The Eclipse IDE 2019-12 is&nbsp;now&nbsp;available!</strong></h2>
-            <p></p>
-            <a class='btn btn-primary btn-lg' href='/eclipseide/'>Download now</a>
+            <h2 class='margin-top-30'><strong>Jakarta EE 2020 Developer Survey</strong></h2>
+            <p style='text-transform:none;font-size:20px;margin-bottom:10px;'>Take the Enterprise Java Ecosystem's Leading Survey Today!</p><p style='font-size:20px;'><strong>April 6 to April 30</strong></p>
+            <a class='btn btn-primary btn-lg' href='https://www.surveymonkey.com/r/Y67ML5T'>Take the Survey</a>
           </div>
           
         </div>

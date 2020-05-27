@@ -8,3 +8,4 @@ TextField,40,20,200,180
 Label,3.jpg,50,20,30,198
 Label,4.jpg,50,20,180,198
 Label,2.jpg,150,20,50,215
+Label,3.jpg,300,70,50,400

@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969829624_0" label="Java Main Sources" name="main">
-<item elementID="=lab15/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab16/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab16/res" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab14/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab03/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab04/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab05/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab06/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab07/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab08/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab09/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab10/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab11/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab12/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab02/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab01/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-</workingSet>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969829648_1" label="Java Test Sources" name="test"/>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213705362_5" label="Aufgaben" name="Aufgaben">
-<item elementID="=lab05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab09" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab12" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab16" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab11" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab15" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab14" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab06" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=lab02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab05" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab09" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab12" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab16" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab01" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab23" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab24.1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab19.2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab04" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab08" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab11" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab15" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab22" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab26" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab23.1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab03" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab07" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab10" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab14" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab18" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab21" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab25" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab22.1" type="4"/>
+<item elementID="=Projekt" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab06" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab02" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab17" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab20" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab24" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1571213718613_6" label="Stunde" name="Stunde">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CodingContest" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Stunde" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Pos Logik" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1579086649715_7" label="CCC" name="CCC">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Test" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Level1.1" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Zusatzaufgabe" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Level1" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588708578471_7" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=Projekt/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Projekt/res" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588708578533_8" label="Java Test Sources" name="Java Test Sources"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969844201_2" label="Window Working Set" name="Aggregate for window 1569969844201"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588097368836_9" label="Multiple Working Sets" name="Aggregate:Aufgaben:CCC:main:test:Stunde:">
+<workingSet IMemento.internal.id="Aufgaben"/>
+<workingSet IMemento.internal.id="CCC"/>
+<workingSet IMemento.internal.id="Stunde"/>
+</workingSet>
 <mruList name="CCC"/>
 </workingSetManager>
