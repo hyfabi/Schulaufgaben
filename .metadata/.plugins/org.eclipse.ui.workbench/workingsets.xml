@@ -14,7 +14,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab11" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab15" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab22" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab26" type="4"/>
+<item elementID="=lab26" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab23.1" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab03" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/lab07" type="4"/>
@@ -45,6 +45,7 @@
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588708578471_7" label="Java Main Sources" name="Java Main Sources">
 <item elementID="=Projekt/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Projekt/res" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=lab26/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588708578533_8" label="Java Test Sources" name="Java Test Sources"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569969844201_2" label="Window Working Set" name="Aggregate for window 1569969844201"/>

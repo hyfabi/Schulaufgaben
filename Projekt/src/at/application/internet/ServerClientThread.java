@@ -3,18 +3,16 @@
  */
 package at.application.internet;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
+import java.io.PrintWriter;
 import java.net.Socket;
-
-import at.application.Main;
+import java.util.Scanner;
 
 /**
  * @author Fabian Maurutschek
  * @version 1.0 Projekt
  *
  */
-class ServerClientThread extends Thread{
+class ServerClientThread{
 	Socket serverClient;
 	int clientNo;
 	int squre;
@@ -22,26 +20,20 @@ class ServerClientThread extends Thread{
 	ServerClientThread(Socket inSocket, int counter){
 		serverClient = inSocket;
 		clientNo = counter;
+		start();
 	}
 
-	@Override
-	public void run(){
+	public void start(){
 		try{
-			DataInputStream inStream = new DataInputStream(serverClient.getInputStream());
-			DataOutputStream outStream = new DataOutputStream(serverClient.getOutputStream());
-			String clientMessage = "", serverMessage = "";
-			while(!clientMessage.equals("bye " + Main.SECUTITY_ID)){
-				clientMessage = inStream.readUTF();
-				System.out.println("From Client-" + clientNo + ": Number is :" + clientMessage);
-				squre = Integer.parseInt(clientMessage) * Integer.parseInt(clientMessage);
-				serverMessage = "From Server to Client-" + clientNo + " Square of " + clientMessage
-							+ " is " + squre;
-				outStream.writeUTF(serverMessage);
-				outStream.flush();
+			Scanner scan = new Scanner(serverClient.getInputStream());
+			while(true){
+				if(scan.hasNextLine()){
+					PrintWriter p = new PrintWriter(serverClient.getOutputStream());
+					System.out.println(scan.next());
+					p.println("True");
+					p.flush();
+				}
 			}
-			inStream.close();
-			outStream.close();
-			serverClient.close();
 		}catch(Exception ex){
 			System.out.println(ex);
 		}finally{

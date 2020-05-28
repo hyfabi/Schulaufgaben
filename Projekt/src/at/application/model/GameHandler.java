@@ -24,6 +24,9 @@ import javafx.scene.paint.Color;
  * @version 1.0 lab23
  *
  */
+
+// TODO Überlappung der Spieler
+// TODO 1x Alert
 public class GameHandler{
 
 	public GameData gd;
@@ -137,7 +140,7 @@ public class GameHandler{
 				Platform.exit();
 	}
 
-// TODO: catch + keine selbe Position
+// ++
 	public void movement(String string){
 		if(gd.PLAYER_IS_PLAYING_MRX){
 			Mrx m = gd.mrx;

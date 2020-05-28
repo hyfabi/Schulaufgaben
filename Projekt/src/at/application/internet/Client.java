@@ -16,6 +16,7 @@ import java.util.Enumeration;
 import java.util.Scanner;
 
 import at.application.Main;
+import at.application.view.Lobby;
 
 /**
  * @author Fabian Maurutschek
@@ -23,11 +24,15 @@ import at.application.Main;
  *
  */
 public class Client{
+
+	Lobby l;
+
 	public static void main(String[] args){
-		Client c = new Client();
+		Client c = new Client(null);
 	}
 
-	public Client(){
+	public Client(Lobby l){
+		this.l = l;
 		getInterfaceConnections();
 	}
 
@@ -51,7 +56,36 @@ public class Client{
 		}
 	}
 
-	private boolean checkIfServer(){
+	boolean checkIfServer(String ip){
+		Socket s;
+		try{
+			s = new Socket(ip, Main.PORT);
+			PrintWriter p = new PrintWriter(s.getOutputStream());
+
+			p.println("Conn");
+			p.flush();
+			try{
+				Scanner scanner = new Scanner(s.getInputStream());
+				while(true){
+					if(scanner.hasNextLine()){
+						String s1 = scanner.next();
+						if(s1.equals("True"))
+							if(l != null)
+								l.add(ip);
+					}
+				}
+			}catch(Exception e){
+				e.printStackTrace();
+			}finally{
+				System.out.println("Server exit!! ");
+			}
+
+		}catch(
+
+		ConnectException e){
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		return false;
 	}
 
@@ -91,9 +125,10 @@ public class Client{
 							InetAddress address = Inet4Address.getByAddress(ia);
 							String output = address.toString().substring(1);
 							if(address.isReachable(10000)){
-								if(Main.DEBUG)
+								if(0 == 1)
 									System.out.println(output + " is on the network");
-								tryToConnect(output);
+								if(checkIfServer(output))
+									System.out.println("lol");
 							}
 						}catch(SocketException s){
 						}catch(Exception e){
@@ -102,7 +137,6 @@ public class Client{
 						}
 					}
 				}).start();
-
 			}
 		}catch(Exception e){
 			e.printStackTrace();
@@ -129,6 +163,7 @@ public class Client{
 						String clientMessage = "", serverMessage = "";
 						while(!clientMessage.equals("bye " + Main.SECUTITY_ID)){
 							clientMessage = inStream.readUTF();
+							System.out.println(clientMessage);
 							outStream.writeUTF(serverMessage);
 							outStream.flush();
 						}

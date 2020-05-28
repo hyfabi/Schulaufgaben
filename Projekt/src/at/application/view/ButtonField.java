@@ -17,6 +17,7 @@ import javafx.scene.layout.Pane;
  * @version 1.0 lab23
  *
  */
+
 public class ButtonField extends Pane{
 
 	public GameFieldButton bb;

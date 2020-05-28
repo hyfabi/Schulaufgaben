@@ -20,6 +20,7 @@ public class RootPane extends BorderPane{
 	GameView gv;
 	MainMenu m;
 	static DebugPane dp = new DebugPane();
+	Lobby l;
 
 	public RootPane(){
 		m = new MainMenu(this);
@@ -64,10 +65,10 @@ public class RootPane extends BorderPane{
 					new ButtonType("Lobby beitreten", ButtonData.APPLY));
 		Optional<ButtonType> o = a.showAndWait();
 		if(o.isPresent())
-			if(o.get().getText() == "Lobby erstellen")
-				System.out.println("Lobby erstelen");
+			if(o.get().getText() == "Lobby beitreten")
+				l = new Lobby(true);
 			else
-				System.out.println("Lobby beitreten");
+				l = new Lobby(false);
 	}
 
 }

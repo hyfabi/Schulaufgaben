@@ -16,6 +16,7 @@ public class Main extends Application{
 			RootPane root = new RootPane();
 			Scene scene = new Scene(root, 1920, 1000);
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("Scotlandyard");
 			primaryStage.show();
 		}catch(Exception e){
 			e.printStackTrace();

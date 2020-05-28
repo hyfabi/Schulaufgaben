@@ -90,12 +90,12 @@ public class MainMenu extends BorderPane{
 		btn4.setBackground(new Background(
 					new BackgroundFill(Color.rgb(255, 255, 255, 0.5), new CornerRadii(10), null)));
 		btn4.setOnMouseEntered(x -> {
-			btn3.setBackground(new Background(
+			btn4.setBackground(new Background(
 						new BackgroundFill(Color.rgb(255, 255, 255, 0.7), new CornerRadii(10),
 									null)));
 		});
 		btn4.setOnMouseExited(x -> {
-			btn3.setBackground(new Background(
+			btn4.setBackground(new Background(
 						new BackgroundFill(Color.rgb(255, 255, 255, 0.5), new CornerRadii(10),
 									null)));
 		});
