@@ -3,6 +3,7 @@ package at.application.view;
 import java.util.Optional;
 
 import at.application.Main;
+import at.application.model.Game;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -18,12 +19,14 @@ import javafx.stage.Stage;
  */
 public class RootPane extends BorderPane{
 	GameView gv;
+	Game g;
 	MainMenu m;
 	static DebugPane dp = new DebugPane();
 	Lobby l;
 
 	public RootPane(){
 		m = new MainMenu(this);
+		g = new Game();
 		setCenter(m);
 	}
 

@@ -33,17 +33,14 @@ public class Server{
 	public void start(){
 		try{
 			ServerSocket server = new ServerSocket(25565);
-			int counter = 0;
 			if(Main.DEBUG)
 				System.out.println("Server Started ....");
 			while(true){
-				counter++;
 				Socket serverClient = server.accept();
 				if(Main.DEBUG)
-					System.out.println(" >> " + "Client No:" + counter + " started!");
-				ServerClientThread sct = new ServerClientThread(serverClient, counter);
+					System.out.println("Client started!");
+				ServerClientThread sct = new ServerClientThread(serverClient);
 				clients.add(sct);
-				sct.start();
 			}
 		}catch(Exception e){
 			System.out.println(e);

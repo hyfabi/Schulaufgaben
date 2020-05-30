@@ -3,8 +3,10 @@
  */
 package at.application.internet;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -12,32 +14,62 @@ import java.util.Scanner;
  * @version 1.0 Projekt
  *
  */
-class ServerClientThread{
-	Socket serverClient;
-	int clientNo;
-	int squre;
+public class ServerClientThread extends Thread{
+	Socket so;
+	Scanner scan;
+	PrintWriter pw;
+	ArrayList<String> dataToSend = new ArrayList<>();
 
-	ServerClientThread(Socket inSocket, int counter){
-		serverClient = inSocket;
-		clientNo = counter;
+	public ServerClientThread(Socket inSocket){
+		so = inSocket;
+		try{
+			scan = new Scanner(so.getInputStream());
+			pw = new PrintWriter(so.getOutputStream());
+		}catch(IOException e){
+			e.printStackTrace();
+		}
 		start();
 	}
 
-	public void start(){
+	@Override
+	public void run(){
+		listen(scan);
+		send(pw);
+	}
+
+	public void send(PrintWriter pw1){
+		String s = dataToSend.remove(0);
+		if(s != null && !s.trim().isEmpty())
+			pw1.write(s);
+		pw1.flush();
+	}
+
+	public void listen(Scanner s1){
 		try{
-			Scanner scan = new Scanner(serverClient.getInputStream());
-			while(true){
-				if(scan.hasNextLine()){
-					PrintWriter p = new PrintWriter(serverClient.getOutputStream());
-					System.out.println(scan.next());
-					p.println("True");
-					p.flush();
-				}
+			if(s1.hasNextLine()){
+				result(s1.nextLine());
 			}
-		}catch(Exception ex){
-			System.out.println(ex);
-		}finally{
-			System.out.println("Client -" + clientNo + " exit!! ");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+
+	}
+
+	public void result(String st){
+		switch(st){
+			case "Stop":
+				try{
+					join();
+				}catch(InterruptedException e){
+					e.printStackTrace();
+				}
+			break;
+			case "TryToConnect":
+				dataToSend.add("TrueTryToConnect");
+			break;
+			default:
+				System.out.println("Another Message: " + st);
+			break;
 		}
 	}
 }

@@ -50,8 +50,11 @@ public class Lobby extends BorderPane{
 		setCenter(clientsV);
 		stage.show();
 
-		if(join)
-			c = new Client(this);
+		if(join) try{
+			c = new Client();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		else
 			s = new Server(this);
 	}
