@@ -41,3 +41,4 @@ hs_err_pid*
 .plugins/org.eclipse.team.cvs.core
 /.metadata/
 /.recommenders/
+*metadata
