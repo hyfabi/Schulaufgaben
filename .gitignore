@@ -42,3 +42,15 @@ hs_err_pid*
 /.metadata/
 /.recommenders/
 *metadata
+.metadata/version.ini
+.metadata/.plugins/com.genuitec.eclipse.monitor/myeclipse-usage.properties
+.metadata/.plugins/com.genuitec.eclipse.devstyle/recent.json
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+.metadata/.plugins/org.eclipse.core.runtime/.settings/com.genuitec.eclipse.monitor.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/com.genuitec.eclipse.theming.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
