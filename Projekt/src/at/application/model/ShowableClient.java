@@ -35,4 +35,9 @@ public class ShowableClient{
 		this.ipaddress = ipaddress;
 	}
 
+	@Override
+	public String toString(){
+		return String.format("Name=%s, Ip-Address=%s]", name, ipaddress);
+	}
+
 }

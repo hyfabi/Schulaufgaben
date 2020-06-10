@@ -4,10 +4,11 @@
 package at.application.internet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.Scanner;
+
+import at.application.Main;
 
 /**
  * @author Fabian Maurutschek
@@ -15,60 +16,48 @@ import java.util.Scanner;
  *
  */
 public class ServerClientThread extends Thread{
-	Socket so;
-	Scanner scan;
-	PrintWriter pw;
-	ArrayList<String> dataToSend = new ArrayList<>();
+	Socket socket;
+	Thread t;
+	String inMessage = "", outMessage = "";
+	ObjectInputStream ois;
+	ObjectOutputStream oos;
 
-	public ServerClientThread(Socket inSocket){
-		so = inSocket;
+	public ServerClientThread(Socket s){
 		try{
-			scan = new Scanner(so.getInputStream());
-			pw = new PrintWriter(so.getOutputStream());
-		}catch(IOException e){
-			e.printStackTrace();
-		}
-		start();
-	}
-
-	@Override
-	public void run(){
-		listen(scan);
-		send(pw);
-	}
-
-	public void send(PrintWriter pw1){
-		String s = dataToSend.remove(0);
-		if(s != null && !s.trim().isEmpty())
-			pw1.write(s);
-		pw1.flush();
-	}
-
-	public void listen(Scanner s1){
-		try{
-			if(s1.hasNextLine()){
-				result(s1.nextLine());
-			}
+			socket = s;
+			ois = new ObjectInputStream(socket.getInputStream());
+			oos = new ObjectOutputStream(socket.getOutputStream());
+			init();
 		}catch(Exception e){
-			e.printStackTrace();
+			System.out.println(e);
 		}
-
 	}
 
-	public void result(String st){
-		switch(st){
-			case "Stop":
-				try{
-					join();
-				}catch(InterruptedException e){
-					e.printStackTrace();
+	private void init(){
+
+		t = new Thread(() -> {
+			try{
+				String s = (String) ois.readObject();
+				if(s != null && !s.trim().isEmpty())
+					convertD(s);
+			}catch(Exception e){
+				if(e instanceof NullPointerException){
 				}
-			break;
-			case "TryToConnect":
-				dataToSend.add("TrueTryToConnect");
-			break;
-			default:
-				System.out.println("Another Message: " + st);
+			}
+		});
+		t.start();
+	}
+
+	/**
+	 * @param s
+	 * @throws IOException
+	 */
+	private void convertD(String s) throws Exception{
+		if(Main.SHOW_MESSAGES)
+			System.out.println("Messeage-To-Server: " + s);
+		switch(s){
+			case "Hello?":
+				oos.writeObject("Yes?");
 			break;
 		}
 	}

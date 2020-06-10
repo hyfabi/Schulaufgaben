@@ -18,15 +18,17 @@ import javafx.stage.Stage;
  * @version 1.0 lab23 Main Menu
  */
 public class RootPane extends BorderPane{
+	Stage primary;
 	GameView gv;
 	Game g;
 	MainMenu m;
 	static DebugPane dp = new DebugPane();
 	Lobby l;
 
-	public RootPane(){
+	public RootPane(Stage s){
+		primary = s;
 		m = new MainMenu(this);
-		g = new Game();
+// g = new Game();
 		setCenter(m);
 	}
 
@@ -72,6 +74,7 @@ public class RootPane extends BorderPane{
 				l = new Lobby(true);
 			else
 				l = new Lobby(false);
+		primary.setScene(new Scene(l, 800, 600));
 	}
 
 }

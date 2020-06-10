@@ -5,10 +5,8 @@ package at.application.internet;
 
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
 
 import at.application.Main;
-import at.application.view.Lobby;
 
 /**
  * @author Fabian Maurutschek
@@ -17,34 +15,36 @@ import at.application.view.Lobby;
  */
 public class Server{
 
-	// TODO ServerClientThread -> Showable Client
-	ArrayList<ServerClientThread> clients = new ArrayList<>();
-	Lobby l;
+	final double SERVER_ID = Math.random();
+
+	ServerSocket server;
 
 	public static void main(String[] args){
-		Server s = new Server(null);
-		s.start();
+		@SuppressWarnings("unused")
+		Server s = new Server();
 	}
 
-	public Server(Lobby l){
-		this.l = l;
-	}
-
-	public void start(){
+	public Server(){
 		try{
-			ServerSocket server = new ServerSocket(25565);
-			if(Main.DEBUG)
+			server = new ServerSocket(25565);
+			int counter = 0;
+			if(Main.DEBUG_NETWORK)
 				System.out.println("Server Started ....");
 			while(true){
+				counter++;
 				Socket serverClient = server.accept();
-				if(Main.DEBUG)
-					System.out.println("Client started!");
+				System.out.println(" >> " + "Client No:" + counter + " started!");
 				ServerClientThread sct = new ServerClientThread(serverClient);
-				clients.add(sct);
+				sct.start();
 			}
 		}catch(Exception e){
 			System.out.println(e);
 		}
+	}
+
+	@Override
+	protected void finalize() throws Throwable{
+		server.close();
 	}
 
 }
