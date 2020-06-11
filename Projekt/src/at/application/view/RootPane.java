@@ -74,7 +74,7 @@ public class RootPane extends BorderPane{
 				l = new Lobby(true);
 			else
 				l = new Lobby(false);
-		primary.setScene(new Scene(l, 800, 600));
+		setCenter(l);
 	}
 
 }

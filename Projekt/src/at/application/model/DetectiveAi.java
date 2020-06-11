@@ -83,8 +83,7 @@ public class DetectiveAi extends Ai{
 			for(int i1 : fields.get(pN.getField() + 1).g.uC){
 				if(i == z.number)
 					return f;
-				else
-					f.remove(f.size() - 1);
+				f.remove(f.size() - 1);
 				f.add(i1);
 			}
 		}

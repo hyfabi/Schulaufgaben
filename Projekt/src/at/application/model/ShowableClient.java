@@ -13,10 +13,12 @@ import java.net.InetAddress;
 public class ShowableClient{
 	private String name;
 	private InetAddress ipaddress;
+	private double id;
 
-	public ShowableClient(String name, InetAddress ipaddress){
+	public ShowableClient(String name, InetAddress ipaddress, double id){
 		setIpaddress(ipaddress);
 		setName(name);
+		this.id = id;
 	}
 
 	public String getName(){
@@ -38,6 +40,26 @@ public class ShowableClient{
 	@Override
 	public String toString(){
 		return String.format("Name=%s, Ip-Address=%s]", name, ipaddress);
+	}
+
+	@Override
+	public int hashCode(){
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(id);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj){
+		if(this == obj) return true;
+		if(obj == null) return false;
+		if(getClass() != obj.getClass()) return false;
+		ShowableClient other = (ShowableClient) obj;
+		if(Double.doubleToLongBits(id) != Double.doubleToLongBits(other.id)) return false;
+		return true;
 	}
 
 }

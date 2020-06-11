@@ -7,8 +7,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application{
 
-	public static final boolean EDITOR = false, DEBUG = false, LOCAL = true, DEBUG_NETWORK = false,
-				SHOW_MESSAGES = false;
+	public static final boolean EDITOR = false, DEBUG = false, LOCAL = true, DEBUG_NETWORK = true,
+				SHOW_MESSAGES = true;
 	public static final int PORT = 25565, SECUTITY_ID = 58375839;
 
 	@Override

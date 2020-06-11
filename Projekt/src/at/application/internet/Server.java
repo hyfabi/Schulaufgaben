@@ -24,9 +24,10 @@ public class Server{
 		Server s = new Server();
 	}
 
+	@SuppressWarnings("unused")
 	public Server(){
 		try{
-			server = new ServerSocket(25565);
+			server = new ServerSocket(Main.PORT);
 			int counter = 0;
 			if(Main.DEBUG_NETWORK)
 				System.out.println("Server Started ....");
@@ -34,8 +35,7 @@ public class Server{
 				counter++;
 				Socket serverClient = server.accept();
 				System.out.println(" >> " + "Client No:" + counter + " started!");
-				ServerClientThread sct = new ServerClientThread(serverClient);
-				sct.start();
+				new ServerClientThread(serverClient, SERVER_ID);
 			}
 		}catch(Exception e){
 			System.out.println(e);

@@ -10,8 +10,6 @@ package at.application.model;
  */
 public class Player extends PlayableObject{
 
-	private static final long serialVersionUID = -845076139433472235L;
-
 	/**
 	 * @param tT
 	 * @param bT
